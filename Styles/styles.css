@@ -13,7 +13,7 @@ div#banner {
     overflow: hidden;
 }
 
-/* #229, #118, #AA3 */
+/* NAVIGATION */
 
 div#navbox {
     position: sticky;
@@ -34,19 +34,6 @@ li.navitem {
     padding: 0.5em;
 }
 
-/*
-li.navitem div#content {
-    display: inline-block;
-    transition: max-height 1s ease;
-    max-height: 100vh;
-    overflow: hidden;
-}
-
-li.navitem:hover div#content {
-    max-height: 0;
-    display: none;
-}*/
-
 li.navitem div#more {
     display: block;
     transition: max-height 2s ease;
@@ -56,6 +43,13 @@ li.navitem div#more {
 
 li.navitem:hover div#more {
     max-height: 100vh;
+}
+
+/* FOOTER */
+
+div#footer {
+    background: #229;
+    padding: 1em;
 }
 
 /* LINKS */
