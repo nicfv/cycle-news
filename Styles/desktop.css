@@ -1,7 +1,11 @@
 /* Third css, unique for desktop. */
 
+ul.second {
+    display: block;
+}
+
 ul.first li, ul.second li {
-    display: inline;
+    display: inline-block;
 }
 
 span.navitem {
