@@ -9,7 +9,7 @@
 }
 
 div#banner {
-    max-height: 10em;
+    max-height: 25vh;
     overflow: hidden;
 }
 
@@ -17,12 +17,13 @@ div#banner {
 
 div#navbox {
     position: sticky;
-    top: 0;
+    top: -1px;
 }
 
 div#nav {
     z-index: 11;
     background: #229;
+    color: #aa3;
     padding: 1em;
     text-align: center;
 }
@@ -34,17 +35,31 @@ div#subnav {
     padding: 1em;
     text-align: center;
     position: relative;
+    top: -1px;
+    overflow: hidden;
 }
 
-div#subnav[status=closed] {
-    top: -3em;
+div#subnav[status=closed],
+div#subnav[status=closed] * {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-div#subnav[status=open] {
-    top: 0;
+div#subnav[status=open],
+div#subnav[status=open] * {
+    max-height: 100px;
 }
 
 span.navitem {
+    padding: 1em;
+}
+
+/* FOOTER */
+
+div#footer {
+    background: #229;
+    color: #aa3;
     padding: 1em;
 }
 
