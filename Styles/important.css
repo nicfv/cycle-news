@@ -1,5 +1,5 @@
 /* Last css, put important things here. */
 
-span[status=closed] {
-    display: none;
+div.clear {
+    clear: both;
 }

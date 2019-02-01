@@ -20,24 +20,42 @@ div#navbox {
     top: -1px;
 }
 
-ul.first {
+div#nav {
     background: #229;
-}
-
-ul.second {
-    background: #118;
-}
-
-ul.first li, ul.second li {
-    list-style-type: none;
-}
-
-span.navitem {
     padding: 1em;
 }
 
-span.navitem:hover {
-    background: #116;
+ul.nav {
+    list-style-type: none;
+    display: block;
+}
+
+li.navitem {
+    padding: 0.5em;
+}
+
+/*
+li.navitem div#content {
+    display: inline-block;
+    transition: max-height 1s ease;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+li.navitem:hover div#content {
+    max-height: 0;
+    display: none;
+}*/
+
+li.navitem div#more {
+    display: block;
+    transition: max-height 2s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+li.navitem:hover div#more {
+    max-height: 100vh;
 }
 
 /* LINKS */
