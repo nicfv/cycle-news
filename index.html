@@ -7,47 +7,63 @@
         <meta name="keywords" content="cycle,news,hour,Davis">
         <meta name="author" content="CNH Staff / Nicolas Ventura">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="Styles/main.css">
     </head>
     <body>
         <div id="banner"><img src="http://www.colorfulvacations.com/images/banner-img-5.jpg" alt="Banner" width="100%" height="auto"></div>
         <div id="navbox">
             <div id="nav">
-                <span class="navitem">
-                    <a href="#">Home</a>
-                </span>
-                <span class="navitem">
-                    <a onclick="subnav();">Topics</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">Interviews</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">Videos</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">About</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">Apply</a>
-                </span>
-            </div>
-            <div id="subnav" status="closed">
-                <span class="navitem">
-                    <a href="#">International</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">U.S. and Politics</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">Business</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">Science and Conservation</a>
-                </span>
-                <span class="navitem">
-                    <a href="#">Local</a>
-                </span>
+                <ul class="first">
+                    <li><a href="#"><span class="navitem">
+                        Home
+                    </span></a></li>
+                    <li><a onclick="openclose('Topics');"><span class="navitem">
+                        Topics
+                    </span></a></li>
+                    <span id="Topics" status="closed"><ul class="second">
+                        <li><a href="#"><span class="navitem">
+                            International
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            U.S. and Politics
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            Business
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            Science and Conservation
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            Local
+                        </span></a></li>
+                    </ul></span>
+                    <li><a href="#"><span class="navitem">
+                        Interviews
+                    </span></a></li>
+                    <li><a href="#"><span class="navitem">
+                        Videos
+                    </span></a></li>
+                    <li><a href="#"><span class="navitem">
+                        About
+                    </span></a></li>
+                    <li><a onclick="openclose('Social');"><span class="navitem">
+                        Social
+                    </span></a></li>
+                    <span id="Social" status="closed"><ul class="second">
+                        <li><a href="#"><span class="navitem">
+                            Facebook
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            Twitter
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            Instagram
+                        </span></a></li>
+                        <li><a href="#"><span class="navitem">
+                            LinkedIn
+                        </span></a></li>
+                    </ul></span>
+                </ul>
             </div>
         </div>
         
@@ -79,7 +95,14 @@
         <p>In my experience, there is no such thing as luck. I find your lack of faith disturbing. You're all clear, kid. Let's blow this thing and go home! A tremor in the Force. The last time I felt it was in the presence of my old master.</p>
 
         <div id="footer">
-            The Cycle News Hour | <a href="#">Staff Login</a>
+            <ul class="first">
+                <li><a href="#"><span class="navitem">
+                    The Cycle News Hour
+                </span></a></li>
+                <li><a href="#"><span class="navitem">
+                    Apply
+                </span></a></li>
+            </ul>
         </div>
     </body>
     <script src="Scripts/scripts.js" charset="UTF-8" type="application/javascript"></script>

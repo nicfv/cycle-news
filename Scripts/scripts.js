@@ -1,9 +1,9 @@
-function subnav() {
-    var sn = document.getElementById("subnav");
-    var stat = sn.getAttribute("status");
+function openclose(id) {
+    var subnav = document.getElementById(id);
+    var stat = subnav.getAttribute("status");
     if(stat == "open") {
-        sn.setAttribute("status", "closed");
+        subnav.setAttribute("status", "closed");
     } else {
-        sn.setAttribute("status", "open");
+        subnav.setAttribute("status", "open");
     }
 }

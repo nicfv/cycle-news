@@ -13,54 +13,31 @@ div#banner {
     overflow: hidden;
 }
 
-/* NAVBAR */
+/* #229, #118, #AA3 */
 
 div#navbox {
     position: sticky;
     top: -1px;
 }
 
-div#nav {
-    z-index: 11;
+ul.first {
     background: #229;
-    color: #aa3;
-    padding: 1em;
-    text-align: center;
 }
 
-div#subnav {
-    transition: 1s;
-    z-index: -10;
+ul.second {
     background: #118;
-    padding: 1em;
-    text-align: center;
-    position: relative;
-    top: -1px;
-    overflow: hidden;
 }
 
-div#subnav[status=closed],
-div#subnav[status=closed] * {
-    max-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-div#subnav[status=open],
-div#subnav[status=open] * {
-    max-height: 100px;
+ul.first li, ul.second li {
+    list-style-type: none;
 }
 
 span.navitem {
     padding: 1em;
 }
 
-/* FOOTER */
-
-div#footer {
-    background: #229;
-    color: #aa3;
-    padding: 1em;
+span.navitem:hover {
+    background: #116;
 }
 
 /* LINKS */
