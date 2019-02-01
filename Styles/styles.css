@@ -15,15 +15,36 @@ div#banner {
 
 /* NAVBAR */
 
-div#nav {
-    background: #229;
-    padding: 1em;
-    text-align: center;
+div#navbox {
     position: sticky;
     top: 0;
 }
 
-div#nav span.navitem {
+div#nav {
+    z-index: 11;
+    background: #229;
+    padding: 1em;
+    text-align: center;
+}
+
+div#subnav {
+    transition: 1s;
+    z-index: -10;
+    background: #118;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+div#subnav[status=closed] {
+    top: -3em;
+}
+
+div#subnav[status=open] {
+    top: 0;
+}
+
+span.navitem {
     padding: 1em;
 }
 
@@ -36,6 +57,7 @@ a, a:link, a:visited {
 
 a:hover {
     color: #88b;
+    cursor: pointer;
 }
 
 a:active {
