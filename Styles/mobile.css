@@ -13,7 +13,7 @@ div#nav div#burger {
 
 div#nav div#burger::after {
     color: #aaf;
-    content: "\002630";
+    content: "\002261";
 }
 
 div#nav:hover div#burger::after {
