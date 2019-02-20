@@ -5,5 +5,7 @@ A news website run by CNH Staff, located in Davis, CA.
 Written in PHP, HTML, and CSS.
 ## Collaborators:
 Nicolas Ventura
+Angelika Cimene
+Sahil Gulati
 ## To Do:
 * Build website
