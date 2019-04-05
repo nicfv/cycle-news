@@ -16,7 +16,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
     <body>
         <?php
             $success_ = false;
-            if(isset($_POST['name'] || $_POST['email'])) {
+            if(isset($_POST['name']) || isset($_POST['email'])) {
                 // Add subscriber to records.
                 $name_ = safestring($_POST['name']);
                 $email_ = safestring($_POST['email']);

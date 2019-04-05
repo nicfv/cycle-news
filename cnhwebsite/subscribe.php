@@ -2,8 +2,8 @@
 
 $servername = 'sql141.main-hosting.eu';
 $username = 'u560316230_test';
-$pwfile = fopen("dbpw.pw", "r") or die("Unable to read file.");
-$password = fread($pwfile, filesize("dbpw.pw"));
+$pwfile = fopen(__DIR__."dbpw.pw", "r") or die("Unable to read file.");
+$password = fread($pwfile, filesize(__DIR__."dbpw.pw"));
 $dbname = 'u560316230_test';
 
 // Sends a database query to a specific table and returns the result. Returns NULL if there was an error.
