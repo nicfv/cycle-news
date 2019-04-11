@@ -18,5 +18,5 @@ Written in PHP, HTML, and CSS.
 * Build website
 ## Links:
 * Angelika's Design: https://angcim.github.io/cnh-website-inprogress/
-* Nic's Design/Forms: http://cnh.16mb.com/Subscribe/
+* Nic's Design/Forms: http://cnh.16mb.com/Forms/
 * Menu button source code: https://jonsuh.com/hamburgers/
