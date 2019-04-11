@@ -5,7 +5,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Cycle News Hour - Subscribe</title>
+        <title>The Cycle News Hour - Subscribe & More</title>
         <meta charset="UTF-8">
         <meta name="description" content="UC Davis news and more!">
         <meta name="keywords" content="cycle,news,hour,Davis">
