@@ -16,3 +16,7 @@ Written in PHP, HTML, and CSS.
 * Gather necessary images
 * Make social media buttons
 * Build website
+## Links:
+* Angelika's Design: https://angcim.github.io/cnh-website-inprogress/
+* Nic's Design/Forms: http://cnh.16mb.com/Subscribe/
+* Menu button source code: https://jonsuh.com/hamburgers/
