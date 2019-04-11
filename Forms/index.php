@@ -20,8 +20,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
             $success_sub = false;
             if(isset($_POST['sub_name']) || isset($_POST['sub_email'])) {
                 // Add subscriber to records.
-                $name_sub = safestring($_POST['name']);
-                $email_sub = safestring($_POST['email']);
+                $name_sub = safestring($_POST['sub_name']);
+                $email_sub = safestring($_POST['sub_email']);
                 if(strlen($name_sub) == 0 || strlen($email_sub) == 0) {
                     echo '<h1>Error: Missing name or email!</h1>';
                 } else if(!query('INSERT INTO `'.$dbname.'`.`subscriptions` (name, email) VALUES ("'.$name_sub.'", "'.$email_sub.'");')) {
@@ -63,7 +63,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
                 // Add an article to records.
                 $a_title = safestring($_POST['a_title']);
                 $a_author = safestring($_POST['a_author']);
-                $a_date = date_format(safestring($_POST['a_date']), 'D, M j, Y');
+                $a_date = date('D, M j, Y', safestring($_POST['a_date']));
                 $a_summary = safestring($_POST['a_summary']);
                 $a_sc = safestring($_POST['a_sc']);
                 $a_img = safestring($_POST['a_img']);
@@ -93,7 +93,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
             }
             // Show current articles.
             $result = query('SELECT title, author, relevant, summary, sc, imgpath FROM `'.$dbname.'`.`articles` WHERE 1;');
-            echo '<h1>Current Subscribers:</h1>';
+            echo '<h1>All Articles:</h1>';
             echo '<table>';
             echo '<tr><td>TITLE</td><td>AUTHOR</td><td>DATE</td><td>SUMMARY</td><td>SOUNDCLOUD</td><td>IMG</td></tr>';
             while($row = mysqli_fetch_assoc($result)) {
