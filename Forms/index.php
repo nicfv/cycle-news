@@ -63,7 +63,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
                 // Add an article to records.
                 $a_title = safestring($_POST['a_title']);
                 $a_author = safestring($_POST['a_author']);
-                $a_date = date('D, M j, Y', safestring($_POST['a_date']));
+                if(!isset($_POST['a_date']) || strlen($_POST['a_date']) == 0) {
+                    $a_date = date('D, M j, Y');
+                } else {
+                    $a_date = date('D, M j, Y', strtotime($_POST['a_date']));
+                }
                 $a_summary = safestring($_POST['a_summary']);
                 $a_sc = safestring($_POST['a_sc']);
                 $a_img = safestring($_POST['a_img']);
@@ -84,7 +88,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
                         <input type="text" name="a_title" placeholder="Title"> * Required<br>
                         <input type="text" name="a_author" placeholder="Author"><br>
                         <input type="date" name="a_date"><br>
-                        <input type="text" name="a_summary" placeholder="Summary"> * Recommended<br>
+                        <textarea name="a_summary" placeholder="Summary"></textarea> * Recommended<br>
                         <input type="text" name="a_sc" placeholder="SoundCloud Link"> * Recommended<br>
                         <input type="text" name="a_img" placeholder="Image Path"><br>
                         <input type="submit" value="Upload">
