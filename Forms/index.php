@@ -11,7 +11,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Scripts/sqlfunc.php';
         <meta name="keywords" content="cycle,news,hour,Davis">
         <meta name="author" content="CNH Staff / Nicolas Ventura">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
         <?php
