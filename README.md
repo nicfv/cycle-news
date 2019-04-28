@@ -6,7 +6,8 @@ Written in PHP, HTML, and CSS.
 ## Collaborators:
 * Nicolas Ventura
 * Angelika Cimene
-* Sahil Gulati
+* Annie Lin
+* Idan Shemy
 ## To Do:
 * Complete wireframe
 * Get soundcloud working
@@ -18,5 +19,6 @@ Written in PHP, HTML, and CSS.
 * Build website
 ## Links:
 * Angelika's Design: https://angcim.github.io/cnh-website-inprogress/
+* Nic's Design: http://cnh.16mb.com/
 * Nic's Design/Forms: http://cnh.16mb.com/Forms/
 * Menu button source code: https://jonsuh.com/hamburgers/
