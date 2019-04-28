@@ -1,0 +1,29 @@
+/* Second css, unique for mobile. */
+
+div#nav {
+    transition: max-height 2s ease;
+    max-height: calc(64px + 1.5em);
+    overflow: hidden;
+}
+
+div#nav div#burger {
+    float: right;
+    font-size: 2em;
+}
+
+div#nav div#burger::after {
+    color: #aaf;
+    content: "\002261";
+}
+
+div#nav:hover div#burger::after {
+    content: "\0000D7";
+}
+
+div#nav:hover {
+    max-height: 100vh;
+}
+
+li.navitem {
+    border-bottom: 1px solid #118;
+}

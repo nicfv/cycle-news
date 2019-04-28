@@ -1,0 +1,70 @@
+/* First stylesheet, master css. */
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#banner {
+    max-height: 25vh;
+    overflow: hidden;
+}
+
+/* NAVIGATION */
+
+div#navbox {
+    position: sticky;
+    top: -1px;
+}
+
+div#nav {
+    background: #229;
+    padding: 1em;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: block;
+}
+
+li.navitem {
+    padding: 0.5em;
+}
+
+li.navitem div#more {
+    display: block;
+    transition: max-height 2s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+li.navitem:hover div#more {
+    max-height: 100vh;
+}
+
+/* FOOTER */
+
+div#footer {
+    background: #229;
+    padding: 1em;
+}
+
+/* LINKS */
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #aaf;
+}
+
+a:hover {
+    color: #88b;
+    cursor: pointer;
+}
+
+a:active {
+    color: transparent;
+    text-shadow: 2px 2px 0 #88b;
+}
