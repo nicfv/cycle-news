@@ -1,0 +1,22 @@
+make navigation menu
+nic: make script to print navigation onto each page
+embed soundcloud
+make 
+
+Finalize design
+Access to illustrations
+Major naviagation topics
+Social media buttons
+Make a wireframe for each page
+Template for the website
+Pick a font
+Soundcloud link/widget
+Separte videos by playlist
+
+Pages:
+Videos
+Interviews
+About page (faq?) - history of the cycle news hour
+Staff
+Contact page (dropdown with joining, feedback, etc)
+Events
