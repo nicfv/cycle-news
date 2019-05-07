@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Muli:400,700|Questrial');
+
+/* Applied to Multiple */
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: 'Muli';
+}
+
+.hamburger, #megamenu {
+  background-color: #FFF;
+}
+
+h2, #nosubmenu a {
+  font-size: 25px;
+}
+
+/* Header */
+header {
+  background-color: #BD1F1A;
+  color: #FFF;
+  padding: 0.25em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+
+.hamburger {
+  width: 50px;
+  height: 7px;
+  margin: 7px 0;
+}
+
+#hamburger {
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+
+/* Navigation */
+#megamenu {
+  border: 1px solid gray;
+  width: 72.72%;
+  padding: 100px;
+}
+
+#mainnav {
+  margin-top: -90px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mainnav>ul, #megamenu {
+  display: flex;
+}
+
+#mainnav>ul>li {
+  flex: 1;
+}
+
+#mainnav>ul>li>a {
+  display: block;
+}
+
+#megamenu {
+  position: absolute;
+  left: -9999px;
+  padding: 25px;
+}
+
+#mainnav ul li:hover #megamenu {
+  left: auto;
+}
+
+#megamenu .nav {
+  flex: 1;
+}
+
+#megamenu .nav ul li a {
+  text-decoration: none;
+  color: #333;
+  line-height: 2em;
+}
+
+#megamenu .nav ul li a:hover{
+  color: #EAB856;
+}
+
+a {
+  font-size: 18px;
+}
+
+h2 {
+  color: #BD1F1A;
+}
+
+.navalign {
+  margin-top: -15px;
+}
+
+#nosubmenu, #about {
+  margin-left: 50px;
+}
+
+#nosubmenu {
+  margin-top: 12px;
+}
+
+#report {
+  margin-left: 55px;
+}
+
+.hamburger:hover{
+  background-color: #EAB856;
+}
