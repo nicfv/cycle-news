@@ -14,7 +14,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/sqlfunc.php';
 </head>
 <body>
     <!-- HTML Page Starts Here -->
-    <h1>Contact Us</h1>
     <?php
 
     if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['msg'])) { // Check to see if the user submitted the form.
@@ -34,6 +33,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/sqlfunc.php';
 
     ?>
     <form id="contactform" action="/Contact/" method="POST">
+        <h1>Contact Us</h1>
         <input type="text" name="name" placeholder="Name" maxlength="100"><br>
         <input type="text" name="email" placeholder="Email" maxlength="100"><br>
         <select name="category">
