@@ -1,14 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>The Cycle News Hour</title> <!-- Change The Title -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./Styles/master.css" />
-    <script src="./Scripts/scripts.js"></script>
-</head>
+    <meta charset="utf-8">
+    <title>Cycle News Hour</title>
+       <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+      <link href="styles.css" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
 <body>
-    <!-- HTML Page Starts Here -->
-</body>
+
+	<div id="container">
+
+    	<header>
+        	<h1>Cycle News Hour</h1>
+        </header>
+
+        <section id="open">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        </section>
+
+      <section id="close">
+      <div class="hamburger"><p>x</p></div>
+      </section>
+
+<!-- Navigation Mobile Design -->
+      <nav id="mobileNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li id="mobileRep"><a>Reports</a>
+            <ul class="submenu" id="reports">
+              <li><a href="section-page.html">International</a></li>
+              <li><a href="politics.html">U.S. & Politics</a></li>
+              <li><a href="business.html">Business</a></li>
+              <li><a href="science.html">Science and Conservation</a></li>
+              <li><a href="local.html">Local</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Interviews</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Events</a></li>
+
+          <li id="mobileAbt"><a>About</a>
+            <ul class="submenu" id="mobileabout">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Staff</a></li>
+            </ul>
+          </li>
+
+          <li id="mobileContact"><a>Contact</a>
+            <ul class="submenu" id="mobilecont">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+          </li>
+          </ul>
+      </nav>
+
+
+<!-- Navigation Desktop Design -->
+<div id="displayNone">
+        <nav id="mainnav">
+        	<ul>
+                <li><a href="#" id="hamburger">
+                  <div class="hamburger"></div>
+                  <div class="hamburger"></div>
+                  <div class="hamburger"></div>
+                </a>
+									<nav id="megamenu">
+										<div class="nav" id="nosubmenu">
+											<ul>
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Interviews</a></li>
+												<li><a href="#">Videos</a></li>
+												<li><a href="#">Events</a></li>
+											</ul>
+										</div>
+
+										<div class="nav" id="report">
+											<h2>Reports</h2>
+											<ul class="navalign">
+												<li><a href="#">International</a></li>
+												<li><a href="#">U.S. & Politics</a></li>
+												<li><a href="#">Business</a></li>
+												<li><a href="#">Science and Conservation</a></li>
+												<li><a href="#">Local</a></li>
+											</ul>
+										</div>
+
+										<div class="nav" id="about">
+											<h2>About</h2>
+											<ul class="navalign">
+												<li><a href="#">History</a></li>
+												<li><a href="#">Staff</a></li>
+											</ul>
+										</div>
+
+										<div class="nav" id="contact">
+											<h2>Contact</h2>
+											<ul class="navalign">
+												<li><a href="#">Contact Us</a></li>
+												<li><a href="#">Facebook</a></li>
+												<li><a href="#">Instagram</a></li>
+												<li><a href="#">Twitter</a></li>
+											</ul>
+										</div>
+                      <img src="images/testa.png" alt="test" width="290" height="259" id="logo">
+									</nav>
+								</li>
+            </ul>
+        </nav>
+</div>
+<section>
+<article id="topnews">
+  <h2>Top News</h2>
+  <div class="top-img"></div>
+</article>
+</section>
+</div>
+
+<main>
+<!-- Trending News -->
+<section id="trending">
+  <h2>Trending</h2>
+  <article>
+    <section>
+    <div class="trend-img"></div>
+    </section>
+  <section class="tablet">
+    <h4 class="category"><a>CATEGORY</a></h4>
+    <h3><a href="#">Article Title</a></h3>
+    <h4 class="author">Author</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</section>
+  </article>
+
+  <article>
+    <section>
+    <div class="trend-img"></div>
+    </section>
+  <section class="tablet">
+    <h4 class="category"><a>CATEGORY</a></h4>
+    <h3><a href="#">Article Title</a></h3>
+    <h4 class="author">Author</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</section>
+  </article>
+
+  <article>
+    <section>
+    <div class="trend-img"></div>
+    </section>
+  <section class="tablet">
+    <h4 class="category"><a>CATEGORY</a></h4>
+    <h3><a href="#">Article Title</a></h3>
+    <h4 class="author">Author</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</section>
+  </article>
+</section>
+
+
+
+<!-- Recent Articles -->
+<section id="recent">
+    <h2>Recent Articles</h2>
+    <article>
+      <section>
+      <div class="recent-img"></div>
+      </section>
+    <section class="desktop">
+      <h4 class="category"><a>CATEGORY</a></h4>
+      <h3><a href="#">Article Title</a></h3>
+      <h4 class="author">Author</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </section>
+    </article>
+
+    <article>
+      <section>
+      <div class="recent-img"></div>
+      </section>
+    <section class="desktop">
+      <h4 class="category"><a>CATEGORY</a></h4>
+      <h3><a href="#">Article Title</a></h3>
+      <h4 class="author">Author</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </section>
+    </article>
+  </section>
+
+<!-- Videos, Social, Subscribe -->
+<section id="aside">
+    <article>
+      <h2>Videos</h2>
+      <section class="videos">
+      <section>
+      <h3><a href="#">Video 1</a></h3>
+        <div class="videos-img"></div>
+      </section>
+      <section>
+        <h3><a href="#">Video 2</a></h3>
+          <div class="videos-img"></div>
+        </section>
+      </section>
+      <section class="videos">
+      <section>
+      <h3><a href="#">Video 3</a></h3>
+        <div class="videos-img"></div>
+      </section>
+      <section>
+        <h3><a href="#">Video 4</a></h3>
+          <div class="videos-img"></div>
+        </section>
+      </section>
+          <p class="more"><a href="#">More Videos</a></p>
+    </article>
+
+    <article>
+      <h2>Social Media Feeds</h2>
+        <div class="social-img"></div>
+        <div class="social-img"></div>
+        <div class="social-img"></div>
+    </article>
+
+    <article id="subscribe">
+      <h2>Join our Mailing List</h2>
+    <form>
+     <input type="text" name="email" id="email" required>
+     <input type="submit" value="Subscribe" class="button" id="submit">
+   </form>
+</article>
+</section>
+</main>
+
+
+<footer>
+  <article id="subscribe2">
+    <h2>Join our Mailing List</h2>
+  <form>
+   <input type="text" name="email2" id="email2" required>
+   <input type="submit" value="Subscribe" class="button" id="submit2">
+ </form>
+</article>
+</footer>
+<script src="script.js"></script>
+  </body>
 </html>
