@@ -38,7 +38,7 @@
 
     ?>
     <!-- HTML Page Starts Here -->
-    <form action="/Upload/" method="POST">
+    <form id="uploadform" action="/Upload/" method="POST">
         <h1>Upload an article here!</h1>
         <input type="text" name="a_title" placeholder="Title"> * Required<br>
         <input type="text" name="a_author" placeholder="Author"><br>
