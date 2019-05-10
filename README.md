@@ -9,16 +9,26 @@ Written in PHP, HTML, and CSS.
 * Annie Lin
 * Idan Shemy
 ## To Do:
-* Complete wireframe
-* Get soundcloud working
-* Update pages with articles
-* Make HTML forms
-* Create databases
-* Gather necessary images
+* Finalize design
+* Complete wireframe for each page
+* Choose a font
+* ~~Get access to the illustrations~~
+* **Angelika:** Finalize navigation menu, add working links
+* Get soundcloud widgets/embed links
 * Make social media buttons
-* Build website
+* Get YouTube embed links, separate by playlist
+* Page loading animation
+* Hamburger menu animation
+* Mobile first
+* Write a master.css to use for all pages for consistency
+* **Nic:** Make functions to get article properties
+* Use functions to update article pages
+* Make HTML forms (subscribe to newsletter)
+* **Nic:** Create databases
+* Build website :)
 ## Links:
 * Angelika's Design: https://angcim.github.io/cnh-website-inprogress/
 * Nic's Design: http://cnh.16mb.com/
-* Nic's Design/Forms: http://cnh.16mb.com/Forms/
+* Nic's Upload Page: http://cnh.16mb.com/Upload/
+* Nic's Contact Page: http://cnh.16mb.com/Contact/
 * Menu button source code: https://jonsuh.com/hamburgers/
