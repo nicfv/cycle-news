@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700|Quicksand');
+
+/* ***************************** For Mobile Screens ***************************** */
+body {
+  width: 375px;
+  font-family: 'Muli', sans-serif;
+}
+
+header, #mobileNav ul li {
+  text-align: center;
+}
+
+/* Placeholder for Images and Articles */
+.trend-img, .recent-img, .videos-img, .top-img, .social-img {
+    background-color: #adf1f7;
+}
+.trend-img, .recent-img, .videos-img, .top-img {
+  padding: 8em;
+}
+
+.trend-img, .recent-img, .videos-img {
+  margin-left: 0.5em;
+}
+
+.social-img {
+  padding: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* ***************** Header ********************* */
+header {
+  background-color: #BD1F1A;
+  color: #FFF;
+  padding: 0.5em;
+}
+
+h1 {
+  font-weight: 700;
+  margin-left: 1em;
+}
+
+/* ****** Hamburger Icon ****** */
+#open .hamburger {
+  background-color: #FFF;
+}
+
+#open, #close {
+  margin: -4.4em 0 0 0.75em;
+}
+
+#open {
+  top: 1.5em;
+  left: 1em;
+}
+
+#close {
+  display: none;
+  margin: -9.4em 0 0 -1.5em;
+}
+
+#open .hamburger {
+  border-radius: 10%;
+  width: 40px;
+  height: 7px;
+  margin: 7px 0;
+}
+
+#close p {
+  font-family: 'Quicksand';
+  font-size: 60px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/* ************** Mobile Navigation Layout ************* */
+#displayNone, #mainNav, .submenu, #reports, #mobileNav {
+  display: none;
+}
+
+#mobileNav {
+  font-size: 20px;
+  padding: 0.9em;
+  margin-top: -1.5em;
+}
+
+#mobileNav ul li {
+  background-color: #EAB856;
+  color: #EAB856;
+  border-top: 0.5px solid #FFF;
+  border-bottom: 0.5px solid #FFF;
+  width: 99.5%;
+  padding: 0.5em;
+  list-style-type: none;
+}
+
+#mobileNav ul li:hover, #mobileRep ul li, #mobileAbt ul li, #mobileContact ul li {
+  background-color: #5CB7A1;
+}
+
+#mobileNav ul {
+  margin: -1.5em 0 0 -3em;
+}
+
+#mobileNav ul li, #mobileNav a {
+  color: #FFF;
+}
+
+#mobileNav a, h3 a {
+  text-decoration: none;
+}
+
+/* *** Mobile Navigation Submenu ***  */
+.submenu li a {
+  margin-left: 0.5em;
+}
+
+#mobileRep ul li:hover, #mobileAbt ul li:hover, #mobileContact ul li:hover {
+  background-color: #BD1F1A;
+}
+
+#reports, #mobileabout, #mobilecont {
+  margin-left: 1.2em;
+  width: 103.2%;
+}
+
+/* Reports */
+#reports {
+  padding-top: 2em;
+}
+
+/* About */
+#mobileabout {
+  padding-top: 2em;
+}
+
+/* Contact */
+#mobilecont {
+  padding-top: 1.8em;
+}
+
+/* **************** Mobile Articles Layout ************** */
+section h2 {
+  color: #318c75;
+  font-size: 35px;
+  padding: 0.5em 0 0 0.4em;
+  margin-bottom: 0.5em;
+}
+
+#recent, #aside {
+  border-top: 1px solid lightgray;
+}
+
+h3 a {
+  color: #494a4c;
+}
+
+/* *** Trending and Recent Articles *** */
+h3, h4, time, p {
+  margin-left: 0.75em;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: -0.25em;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+.author {
+  color: #e8a217;
+  margin-top: -1em;
+}
+
+article p, time {
+  display: none;
+}
+
+.category, .more a {
+  color: #5CB7A1;
+}
+
+.category {
+  padding-bottom: 0.25em;
+  border-bottom: 1.5px solid #5CB7A1;
+  width: 5.5em;
+}
+
+.category:hover, h3 a:hover, .more a:hover {
+  color: #BD1F1A;
+}
+
+.category:hover {
+  border-bottom: 1.5px solid #BD1F1A;
+}
+
+/* *** Aside Content (Videos + Social Media) *** */
+#aside h3 {
+  margin-top: 1em;
+}
+
+.more {
+  text-align: right;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.more a {
+  text-decoration: none;
+}
+
+/* ****** Subscribe ****** */
+#subscribe2{
+  display:none;
+}
+
+#subscribe, #subscribe2 {
+  text-align: center;
+  background-color: #EAB856;
+  padding: 1em;
+}
+
+#subscribe h2, #subscribe2 h2{
+  color: #FFF;
+}
+#subscribe h2 {
+  font-size: 30px;
+}
+
+input[type="text"], .button {
+  border: none;
+  padding: 0.3em
+}
+
+.button {
+  background-color: #5CB7A1;
+  color: #FFF;
+  border-radius: 5%;
+  margin-left: 0.1em;
+}
+
+.button:hover {
+  background-color: #BD1F1A;
+}
+
+/* ***************************** For Tablets Screens *****************************/
+@media only screen and (min-width: 700px) {
+  body {
+    width: 600px;
+  }
+
+  #open, #logo {
+    display: none;
+  }
+
+  #displayNone {
+    display: block;
+  }
+
+  #nosubmenu a {
+    font-size: 25px;
+  }
+
+  /* *********************** Header *************************** */
+  h1 {
+    font-size: 50px;
+  }
+
+  /* *********** Hamburger Icon ********* */
+  .hamburger, #megamenu {
+    background-color: #FFF;
+  }
+
+  #hamburger {
+    padding-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  .hamburger {
+    width: 50px;
+    height: 7px;
+    margin: 7px 0;
+    border-radius: 10%;
+  }
+
+  .hamburger:hover {
+    background-color: #EAB856;
+  }
+
+  /* ************** Tablet Navigation Layout *********** */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mainnav>ul, #megamenu {
+    display: flex;
+  }
+
+  #mainnav>ul>li {
+    flex: 1;
+  }
+
+  #mainnav>ul>li>a {
+    display: block;
+  }
+
+  #mainnav {
+    margin-top: -90px;
+  }
+
+  #megamenu {
+    position: absolute;
+    left: -9999px;
+    padding: 25px;
+  }
+
+  #megamenu {
+    border: 1px solid gray;
+    width: 548px;
+  }
+
+  #mainnav ul li:hover #megamenu {
+    left: auto;
+  }
+
+  #megamenu .nav {
+    flex: 1;
+  }
+
+  #megamenu .nav ul li a {
+    text-decoration: none;
+    color: #333;
+    line-height: 2em;
+  }
+
+  #megamenu .nav ul li a:hover {
+    color: #EAB856;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  nav h2 {
+    color: #BD1F1A;
+  }
+
+  .navalign {
+    margin-top: -15px;
+  }
+
+  #about {
+    margin-left: 40px;
+  }
+
+  #nosubmenu {
+    margin-top: 12px;
+  }
+
+  #report {
+    margin-left: 55px;
+  }
+
+  /* ************ Articles Layout ************* */
+  #trending article, #recent article, .videos {
+    display: flex;
+  }
+
+  #trending article, #recent article {
+    padding-bottom: 1em;
+  }
+
+  .trend-img, .recent-img {
+    width: 40%;
+  }
+
+  .tablet, .desktop {
+    margin-left: 7em;
+    width: 50%;
+  }
+
+  article p, time {
+    display: block;
+  }
+
+  h3 a {
+    font-size: 35px;
+  }
+
+  /* ******* Videos *********/
+  .videos section {
+    width: 60%;
+  }
+
+  .more a {
+    font-size: 25px;
+  }
+
+  #aside h3 a{
+    font-size: 25px;
+  }
+
+  /* ***************************** For Desktop Screens *****************************/
+  @media only screen and (min-width: 1000px) {
+    body {
+      width: 100%;
+    }
+
+    nav h2, #nosubmenu a {
+      font-size: 30px;
+    }
+
+    /* ******************* Header ******************* */
+    h1 {
+      font-size: 50px;
+    }
+
+    /* ************** Desktop Navigation Layout *********** */
+    #logo {
+      display: block;
+      margin-left: -5em;
+      width: 20%;
+      height: 20%;
+    }
+
+    #hamburger {
+      padding-bottom: 20px;
+      margin-left: 30px;
+    }
+
+    /* ************ Navigation *************/
+    #megamenu {
+      border: 1px solid gray;
+      padding-left: 50px;
+      width: 95.4%;
+    }
+
+    #mainnav {
+      margin-top: -90px;
+    }
+
+    #nosubmenu {
+      margin-left: 3em;
+      padding-right: 5em;
+    }
+
+    #report, #about, #contact {
+      margin-left: -8em;
+    }
+
+    #report {
+      padding-right: 2em;
+    }
+
+/* ************ Articles Layout ************* */
+#trending article, #recent article, .videos {
+  display: block;
+}
+
+main{
+  display: flex;
+}
+
+#recent, #aside {
+  border: none;
+}
+
+.top-img{
+      padding: 13em;
+    }
+
+#trending{
+  width: 20%;
+  padding: 0 9em 0 0;
+}
+
+.tablet{
+margin-left: 1em;
+width: 120%;
+}
+
+.recent-img{
+  width: 40%;
+  padding:13em;
+}
+
+.desktop{
+  margin-left: 1em;
+  width: 87%;
+}
+
+/* **** Aside (Videos, Social, Subscribe) **** */
+.videos-img{
+  width: 60%;
+}
+#aside{
+  background-color: #FFF;
+  padding-right: 0.5em;
+  width: 30%;
+}
+
+#subscribe{
+  display: none;
+}
+
+#subscribe2{
+  padding: 5em;
+  display:block;
+  padding: 2em;
+}
+
+#subscribe2 h2 {
+  color: #FFF;
+  font-size: 50px;
+}
+
+input[type="text"] {
+  width: 20%;
+  padding: 0.5em
+}
+
+.button{
+  width: 10%;
+  font-size: 20px;
+}
+  }
+}
