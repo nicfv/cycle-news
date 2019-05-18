@@ -28,7 +28,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
             $a_date = date('D, M j, Y', strtotime($_POST['a_date']));
         }
         $a_summary = safestring($_POST['a_summary']);
-        $a_sc = safestring($_POST['a_sc']);
+        $a_sc = addslashes($_POST['a_sc']);
         $a_img = safestring($_POST['a_img']);
         if(strlen($a_title) == 0) {
             echo '<p class="error">Missing title!</p>';
@@ -50,7 +50,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <input type="text" name="a_author" placeholder="Author"><br>
         <input type="date" name="a_date"><br>
         <textarea name="a_summary" placeholder="Summary"></textarea> * Recommended<br>
-        <input type="text" name="a_sc" placeholder="SoundCloud Link"> * Recommended<br>
+        <input type="text" name="a_sc" placeholder="SoundCloud Embed"> * Recommended <a onclick="alert('This is the code for embedding a SoundCloud audio. This is not the link to SoundCloud! Go to your SoundCloud audio > \'share\' > \'embed\' to find the code, and copy and paste it here.');" href="#">[?]</a><br>
         <input type="text" name="a_img" placeholder="Image Path"><br>
         <input type="submit" value="Upload">
     </form>
