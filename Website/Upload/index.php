@@ -1,6 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/globals.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/sqlfunc.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,6 +13,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/sqlfunc.php';
 </head>
 <body>
     <?php
+    printnav();
 
     $success_a = false;
     if(isset($_POST['a_title']) || isset($_POST['a_author'])

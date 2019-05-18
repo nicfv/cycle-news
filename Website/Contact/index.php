@@ -1,6 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/globals.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/sqlfunc.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +14,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/sqlfunc.php';
 <body>
     <!-- HTML Page Starts Here -->
     <?php
+    printnav();
 
     if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['msg'])) { // Check to see if the user submitted the form.
         if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['category']) || !isset($_POST['msg']) ||
