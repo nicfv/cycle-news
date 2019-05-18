@@ -6,8 +6,8 @@ form#contactform {
     padding:1em;
 }
 
-form#uploadform input, form#uploadform textarea,
-form#contactform input, form#contactform textarea {
+form#uploadform input, form#uploadform select, form#uploadform textarea,
+form#contactform input, form#contactform select, form#contactform textarea {
     color:black;
     background: white;
     border:0;
@@ -49,6 +49,12 @@ form#contactform input[type=submit]:active {
     color: transparent;
     background: #999;
     text-shadow: black 1px 1px 0;
+}
+
+form#uploadform a,
+form#contactform a {
+    color:white;
+    text-decoration: none;
 }
 
 /* SELECTION */
