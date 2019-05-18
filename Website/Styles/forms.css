@@ -1,0 +1,71 @@
+form#uploadform,
+form#contactform {
+    background: #BD1F1A;
+    border-radius: 1em;
+    margin:1em;
+    padding:1em;
+}
+
+form#uploadform input, form#uploadform textarea,
+form#contactform input, form#contactform textarea {
+    color:black;
+    background: white;
+    border:0;
+    border-radius: 0.4em;
+    margin:0.4em;
+    padding:0.2em;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+form#uploadform textarea,
+form#contactform textarea {
+    height: 0;
+    min-height: 2em;
+    max-height: 6em;
+}
+
+form#uploadform input[type=submit],
+form#contactform input[type=submit] {
+    min-width: 0%;
+    max-width: 100%;
+    width: min-content;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 0.4em;
+}
+
+form#uploadform input[type=submit]:hover,
+form#contactform input[type=submit]:hover {
+    cursor: pointer;
+    color: transparent;
+    text-shadow: black -1px -1px 0;
+}
+
+form#uploadform input[type=submit]:active,
+form#contactform input[type=submit]:active {
+    cursor: pointer;
+    color: transparent;
+    background: #999;
+    text-shadow: black 1px 1px 0;
+}
+
+/* SELECTION */
+
+/* Remove blue border from tab select. */
+:focus {
+    outline: 0;
+}
+
+/* Customize text highlight color. */
+::selection {
+    background: #CC3333CC; /* DEFAULT */
+    color: #fff; /* DEFAULT */
+}
+
+/* Change the placeholder color. */
+::placeholder {
+    color: #666; /* DEFAULT */
+    -webkit-text-fill-color: #666; /* Because of autofill - Chrome */
+}

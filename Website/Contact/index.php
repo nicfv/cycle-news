@@ -39,6 +39,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <select name="category">
             <option value="g">General Inquiry</option>
             <option value="j">Joining The Cycle News</option>
+            <option value="a">Article Feedback</option>
             <option value="o">Other</option>
         </select><br>
         <textarea name="msg" placeholder="Message..."></textarea><br>
