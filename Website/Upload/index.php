@@ -34,6 +34,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
             echo '<p class="error">Missing title!</p>';
         } else if(strlen($a_summary) < 10 && strlen($a_sc) == 0) {
             echo '<p class="error">Missing Soundcloud or summary is too short!</p>';
+        } else if(strlen($a_sc) > 0 && (strlen($a_sc) < 7 || substr($a_sc, 0, 7) != '<iframe')) { // Check to make sure soundcloud starts with '<iframe'
+            echo '<p class="error">The SoundCloud embed is not the right format.</p>';
         } else if(!query('INSERT INTO `'.$dbname.'`.`articles` (title, author, relevant, summary, sc, imgpath) VALUES ("'.$a_title.'", "'.$a_author.'", "'.$a_date.'", "'.$a_summary.'", "'.$a_sc.'", "'.$a_img.'");')) {
             echo '<p class="error">Could not submit article! Try again!</p>';
         } else {
