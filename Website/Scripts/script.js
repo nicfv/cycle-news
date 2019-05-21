@@ -10,7 +10,10 @@ var mobileReports = document.querySelector('#mobileRep');
 var mobileAbout = document.querySelector('#mobileAbt');
 var mobileContact = document.querySelector('#mobileContact');
 
-
+var facebook = document.querySelector('#fb');
+var twitter = document.querySelector('#twitter');
+var instagram = document.querySelector('#insta');
+var email = document.querySelector('#mail');
 
 // Mobile Navigation Click
 hamburger.addEventListener('click', function() {
@@ -49,3 +52,36 @@ mobileContact.addEventListener('mouseover', function() {
 mobileContact.addEventListener('mouseout', function() {
   document.querySelector('#mobilecont').style.display = 'none';
 })
+
+// Share Buttons
+facebook.addEventListener('mouseover', function() {
+  document.getElementById('fb').src = "../media/fb-hover.png";
+});
+
+facebook.addEventListener('mouseout', function() {
+  document.getElementById('fb').src = "../media/facebook.png";
+});
+
+twitter.addEventListener('mouseover', function() {
+  document.getElementById('twitter').src = "../media/twitter-hover.png";
+});
+
+twitter.addEventListener('mouseout', function() {
+  document.getElementById('twitter').src = "../media/twitter.png";
+});
+
+instagram.addEventListener('mouseover', function() {
+  document.getElementById('insta').src = "../media/insta-hover.png";
+});
+
+instagram.addEventListener('mouseout', function() {
+  document.getElementById('insta').src = "../media/instagram.png";
+});
+
+email.addEventListener('mouseover', function() {
+  document.getElementById('mail').src = "../media/email-hover.png";
+});
+
+email.addEventListener('mouseout', function() {
+  document.getElementById('mail').src = "../media/email.png";
+});
