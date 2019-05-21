@@ -1,14 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>The Cycle News Hour</title> <!-- Change The Title -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../Styles/master.css" />
-    <script src="../Scripts/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>Cycle News Hour</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="../styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <!-- HTML Page Starts Here -->
+
+  <div id="container">
+
+    <header>
+      <h1>Cycle News Hour</h1>
+    </header>
+
+    <section id="open">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+    </section>
+
+    <section id="close">
+      <div class="hamburger">
+        <p>x</p>
+      </div>
+    </section>
+
+    <!-- Navigation Mobile Design -->
+    <nav id="mobileNav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li id="mobileRep"><a>Reports</a>
+          <ul class="submenu" id="reports">
+            <li><a href="../division/index.html">International</a></li>
+            <li><a href="../division/index.html">U.S. & Politics</a></li>
+            <li><a href="../division/index.html">Business</a></li>
+            <li><a href="../division/index.html">Science and Conservation</a></li>
+            <li><a href="../division/index.html">Local</a></li>
+            <li><a href="../division/index.html">Sports</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Interviews</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Events</a></li>
+
+        <li id="mobileAbt"><a>About</a>
+          <ul class="submenu" id="mobileabout">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Staff</a></li>
+          </ul>
+        </li>
+
+        <li id="mobileContact"><a>Contact</a>
+          <ul class="submenu" id="mobilecont">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="https://www.facebook.com/CycleNewsHour/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/cyclenewshour/?hl=en">Instagram</a></li>
+            <li><a href="https://twitter.com/CycleNewsHour">Twitter</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- Navigation Desktop Design -->
+    <div id="displayNone">
+      <nav id="mainnav">
+        <ul>
+          <li><a href="#" id="hamburger">
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+            </a>
+            <nav id="megamenu">
+              <div class="nav" id="nosubmenu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="#">Interviews</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Events</a></li>
+                </ul>
+              </div>
+
+              <div class="nav" id="report">
+                <h2>Reports</h2>
+                <ul class="navalign">
+                  <li><a href="../division/index.html">International</a></li>
+                  <li><a href="../division/index.html">U.S. & Politics</a></li>
+                  <li><a href="../division/index.html">Business</a></li>
+                  <li><a href="../division/index.html">Science and Conservation</a></li>
+                  <li><a href="../division/index.html">Local</a></li>
+                  <li><a href="../division/index.html">Sports</a></li>
+                </ul>
+              </div>
+
+              <div class="nav" id="about">
+                <h2>About</h2>
+                <ul class="navalign">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Staff</a></li>
+                </ul>
+              </div>
+
+              <div class="nav" id="contact">
+                <h2>Contact</h2>
+                <ul class="navalign">
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="https://www.facebook.com/CycleNewsHour/">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/cyclenewshour/?hl=en">Instagram</a></li>
+                  <li><a href="https://twitter.com/CycleNewsHour">Twitter</a></li>
+                </ul>
+              </div>
+              <img src="../media/logo.png" alt="test" width="290" height="259" id="logo">
+            </nav>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-article">
+    <!-- Single Post Article -->
+    <section id="desktop-flex">
+      <section id="post">
+        <h4 class="category"><a href="../division/index.html" class="category">Category</a></h4>
+        <article>
+          <h2 class="title">Title of the Article</h2>
+          <h3>Author and Date</h3>
+          <div class="post-img"></div>
+          <img src="../media/soundcloud.png" alt="image" width="400" id="soundcloud">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+
+        <section id="share-buttons">
+          <a><img src="../media/facebook.png" alt="facebook share button" width="65" height="65" id="fb"></a>
+          <a><img src="../media/twitter.png" alt="twitter share button" width="65" height="65" id="twitter"></a>
+          <a><img src="../media/instagram.png" alt="instagram share button" width="65" height="65" id="insta"></a>
+          <a><img src="../media/email.png" alt="email share button" width="65" height="65" id="mail"></a>
+        </section>
+      </section>
+
+      <!-- Recent Division Articles -->
+      <section id="aside">
+        <h2>Related Articles</h2>
+        <article id="related-desktop">
+          <section>
+            <div class="recent-img"></div>
+          </section>
+          <section class="desktop">
+            <h4 class="category"><a>CATEGORY</a></h4>
+            <h3><a href="index.html">Article Title</a></h3>
+            <h4 class="author">Author</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </section>
+        </article>
+
+        <article class="related-desktop">
+          <section>
+            <div class="recent-img"></div>
+          </section>
+          <section class="desktop">
+            <h4 class="category"><a>CATEGORY</a></h4>
+            <h3><a href="index.html">Article Title</a></h3>
+            <h4 class="author">Author</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </section>
+        </article>
+
+        <h2>Trending Articles</h2>
+        <article class="trending-desktop">
+          <section>
+            <div class="recent-img"></div>
+          </section>
+          <section class="desktop">
+            <h4 class="category"><a>CATEGORY</a></h4>
+            <h3><a href="index.html">Article Title</a></h3>
+            <h4 class="author">Author</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </section>
+        </article>
+
+        <article class="related-desktop">
+          <section>
+            <div class="recent-img"></div>
+          </section>
+          <section class="desktop">
+            <h4 class="category"><a>CATEGORY</a></h4>
+            <h3><a href="index.html">Article Title</a></h3>
+            <h4 class="author">Author</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </section>
+        </article>
+
+        <article id="subscribe">
+          <h2>Join our Mailing List</h2>
+          <form>
+            <input type="text" name="email" id="email" required>
+            <input type="submit" value="Subscribe" class="button" id="submit">
+          </form>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <section id="comment-section">
+    <h2>Comment Section</h2>
+    <section>
+      <div class="comment-img"></div>
+      <section>
+        <form>
+          <label for="email" class="comment">Name</label> <br>
+          <input type="text" name="name" id="name" required> <br>
+          <label for="comment" class="comment">Leave a Comment</label> <br>
+          <textarea id="comment" rows="2" required></textarea>
+          <input type="submit" value="Submit" id="submitComment" class="button">
+        </form>
+      </section>
+    </section>
+
+    <section id="comments">
+      <h3></h3>
+      <p></p>
+    </section>
+  </section>
+
+  <footer>
+  </footer>
+  <script src="../script.js"></script>
 </body>
+
 </html>
