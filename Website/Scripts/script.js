@@ -55,33 +55,33 @@ mobileContact.addEventListener('mouseout', function() {
 
 // Share Buttons
 facebook.addEventListener('mouseover', function() {
-  document.getElementById('fb').src = "../media/fb-hover.png";
+  document.getElementById('fb').src = "../Media/fb-hover.png";
 });
 
 facebook.addEventListener('mouseout', function() {
-  document.getElementById('fb').src = "../media/facebook.png";
+  document.getElementById('fb').src = "../Media/facebook.png";
 });
 
 twitter.addEventListener('mouseover', function() {
-  document.getElementById('twitter').src = "../media/twitter-hover.png";
+  document.getElementById('twitter').src = "../Media/twitter-hover.png";
 });
 
 twitter.addEventListener('mouseout', function() {
-  document.getElementById('twitter').src = "../media/twitter.png";
+  document.getElementById('twitter').src = "../Media/twitter.png";
 });
 
 instagram.addEventListener('mouseover', function() {
-  document.getElementById('insta').src = "../media/insta-hover.png";
+  document.getElementById('insta').src = "../Media/insta-hover.png";
 });
 
 instagram.addEventListener('mouseout', function() {
-  document.getElementById('insta').src = "../media/instagram.png";
+  document.getElementById('insta').src = "../Media/instagram.png";
 });
 
 email.addEventListener('mouseover', function() {
-  document.getElementById('mail').src = "../media/email-hover.png";
+  document.getElementById('mail').src = "../Media/email-hover.png";
 });
 
 email.addEventListener('mouseout', function() {
-  document.getElementById('mail').src = "../media/email.png";
+  document.getElementById('mail').src = "../Media/email.png";
 });

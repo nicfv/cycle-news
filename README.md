@@ -14,17 +14,23 @@ Written in PHP, HTML, and CSS.
 * Choose a font
 * ~~Get access to the illustrations~~
 * **Angelika:** Finalize navigation menu, add working links
-* Get soundcloud widgets/embed links
-* Make social media buttons
+* ~~Get soundcloud widgets/embed links~~
+* ~~Make social media buttons~~
 * Get YouTube embed links, separate by playlist
 * Page loading animation
 * Hamburger menu animation
-* Mobile first
+* ~~Mobile first~~
 * Write a master.css to use for all pages for consistency
 * **Nic:** Make functions to get article properties
 * Use functions to update article pages
 * Make HTML forms (subscribe to newsletter)
 * **Nic:** Create databases
+* Videos Page (All)
+* Video Page (Single)
+* Interviews Page (All)
+* Interview (Single)
+* About Page
+* Events Page
 * Build website :)
 ## Links:
 * Angelika's Design: https://angcim.github.io/cnh-website-inprogress/
@@ -32,3 +38,4 @@ Written in PHP, HTML, and CSS.
 * Nic's Upload Page: http://cnh.16mb.com/Upload/
 * Nic's Contact Page: http://cnh.16mb.com/Contact/
 * Menu button source code: https://jonsuh.com/hamburgers/
+* Facebook Share Link: https://developers.facebook.com/docs/plugins/share-button/#configurator

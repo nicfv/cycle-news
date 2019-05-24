@@ -45,5 +45,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <textarea name="msg" placeholder="Message..."></textarea><br>
         <input type="submit" value="Send">
     </form>
+    <?php writefilecontents('/Scripts/script.html'); ?>
 </body>
 </html>
