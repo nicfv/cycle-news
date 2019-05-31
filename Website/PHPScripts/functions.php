@@ -41,4 +41,31 @@ function getImg($id) {
     }
 }
 
+// Call this function to print the division of the article with the given ID.
+function getDiv($id) {
+    $division = strtolower(substr(getcol('articles', $id, 'division'), 0, 1));
+    $divstr = null;
+    switch($division) {
+        case 'i':
+            $divstr = 'International';
+            break;
+        case 'u':
+            $divstr = 'U.S. and Politics';
+            break;
+        case 'b':
+            $divstr = 'Business';
+            break;
+        case 'c':
+            $divstr = 'Science and Conservation';
+            break;
+        case 'l':
+            $divstr = 'Local';
+            break;
+        case 's':
+            $divstr = 'Sports';
+            break;
+    }
+    echo '<a href="/Division?topic='.$divstr.'" title="Click to read articles on '.$divstr.' news.">'.$divstr.'</a>';
+}
+
 ?>

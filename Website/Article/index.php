@@ -15,12 +15,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
 <body>
   
 <?php printnav(); ?>
+<?php
+// Check to make sure that "id" is set and an article with that id exists:
+if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET['id'], 'id')) {
+  die('Article not found.');
+}
+?>
 
   <main id="main-article">
     <!-- Single Post Article -->
     <section id="desktop-flex">
       <section id="post">
-        <h4 class="category"><a href="../Division/index.html" class="category">Category</a></h4>
+        <h4 class="category"><?php getDiv($_GET['id']); ?></h4>
         <article>
           <h2 class="title"><?php getTitle($_GET['id']); ?></h2>
           <h3><?php getAuthor($_GET['id']); echo ' - '; getNewsDate($_GET['id']); ?></h3>
