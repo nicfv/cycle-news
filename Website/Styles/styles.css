@@ -11,16 +11,20 @@ header, #mobileNav ul li {
 }
 
 /* Placeholder for Images and Articles */
-.trend-img, .recent-img, .videos-img, .top-img, .social-img, #division .recent-img, .post-img, .comment-img {
+.trend-img, .recent-img, .videos-img, .top-img, .social-img, #division .recent-img, .post-img, .comment-img, .vid-img {
   background-color: #adf1f7;
 }
 
-.trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img {
+.trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img, .vid-img {
   padding: 8em;
 }
 
-.trend-img, .recent-img, .videos-img, #division .recent-img, .post-img {
+.trend-img, .recent-img, .videos-img, #division .recent-img, .post-img, .vid-img {
   margin-left: 0.5em;
+}
+
+.vid-img{
+  margin-bottom: 0.5em;
 }
 
 .social-img {
@@ -341,6 +345,34 @@ textarea {
   margin-left: 8.5em;
 }
 
+/* ********** Mobile Videos Section ********* */
+iframe{
+  width: 370px;
+  margin-bottom: 1em;
+}
+
+.video-title{
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #5CB7A1;
+  color: #FFF;
+  font-size: 33px;
+  line-height: 1.5em;
+}
+
+.singleVid{
+  text-decoration: none;
+  color: #BD1F1A;
+}
+
+.singleVid:hover{
+  color: #EAB442;
+}
+
+.singleVid h3{
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
 /* ***************************** For Tablets Screens *****************************/
 @media only screen and (min-width: 600px) {
   body {
@@ -517,6 +549,35 @@ textarea {
   #comment-section .button {
     margin: 0;
   }
+
+/* ********** Mobile Videos Section ********* */
+.vid-img{
+  padding: 10em 15em 10em 15em;
+}
+  .videos-flex{
+  display:flex;
+}
+
+iframe{
+  margin-left: 1em;
+  width: 300px;
+  height: 250px;
+}
+
+.video-title{
+  background-color: #FFF;
+  color: #5CB7A1;
+  width: 60%;
+  border-bottom: 10px solid #5CB7A1;
+  font-size: 30px;
+  padding: 1em 0.25em 0.25em 0.5em;
+}
+
+.singleVid h3{
+  font-size: 20px;
+  line-height: 1.5em;
+  width: 80%;
+}
 }
 
 /* ***************************** For Desktop Screens *****************************/
@@ -740,4 +801,19 @@ textarea {
     height: 55px;
     padding-bottom: 0.5em;
   }
+
+  /* ********** Desktop Videos Section ********* */
+  iframe{
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+    width: 400px;
+    height: 250px;
+  }
+
+  .video-title{
+    width: 60%;
+    font-size: 40px;
+    padding: 1em 0.25em 0.25em 1em;
+  }
+
 }
