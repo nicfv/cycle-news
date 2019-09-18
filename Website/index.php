@@ -1,132 +1,26 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Cycle News Hour</title>
-  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
-  <link href="Styles/styles.css" rel="stylesheet">
+  <link href="Styles/master.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-  <div id="container">
+<?php printnav(); ?>
 
-    <header>
-      <h1>Cycle News Hour</h1>
-    </header>
-
-    <section id="open">
-      <div class="hamburger"></div>
-      <div class="hamburger"></div>
-      <div class="hamburger"></div>
-    </section>
-
-    <section id="close">
-      <div class="hamburger">
-        <p>x</p>
-      </div>
-    </section>
-
-    <!-- Navigation Mobile Design -->
-    <nav id="mobileNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li id="mobileRep"><a>Reports</a>
-          <ul class="submenu" id="reports">
-            <li><a href="division/index.html">International</a></li>
-            <li><a href="division/index.html">U.S. & Politics</a></li>
-            <li><a href="division/index.html">Business</a></li>
-            <li><a href="division/index.html">Science and Conservation</a></li>
-            <li><a href="division/index.html">Local</a></li>
-            <li><a href="division/index.html">Sports</a></li>
-          </ul>
-        </li>
-
-        <li><a href="#">Interviews</a></li>
-        <li><a href="videos/index.html">Videos</a></li>
-        <li><a href="#">Events</a></li>
-
-        <li id="mobileAbt"><a>About</a>
-          <ul class="submenu" id="mobileabout">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Staff</a></li>
-          </ul>
-        </li>
-
-        <li id="mobileContact"><a>Contact</a>
-          <ul class="submenu" id="mobilecont">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="https://www.facebook.com/CycleNewsHour/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/cyclenewshour/?hl=en">Instagram</a></li>
-            <li><a href="https://twitter.com/CycleNewsHour">Twitter</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-
-    <!-- Navigation Desktop Design -->
-    <div id="displayNone">
-      <nav id="mainnav">
-        <ul>
-          <li><a href="#" id="hamburger">
-              <div class="hamburger"></div>
-              <div class="hamburger"></div>
-              <div class="hamburger"></div>
-            </a>
-            <nav id="megamenu">
-              <div class="nav" id="nosubmenu">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Interviews</a></li>
-                  <li><a href="videos/index.html">Videos</a></li>
-                  <li><a href="#">Events</a></li>
-                </ul>
-              </div>
-
-              <div class="nav" id="report">
-                <h2>Reports</h2>
-                <ul class="navalign">
-                  <li><a href="division/index.html">International</a></li>
-                  <li><a href="division/index.html">U.S. & Politics</a></li>
-                  <li><a href="division/index.html">Business</a></li>
-                  <li><a href="division/index.html">Science and Conservation</a></li>
-                  <li><a href="division/index.html">Local</a></li>
-                </ul>
-              </div>
-
-              <div class="nav" id="about">
-                <h2>About</h2>
-                <ul class="navalign">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Staff</a></li>
-                </ul>
-              </div>
-
-              <div class="nav" id="contact">
-                <h2>Contact</h2>
-                <ul class="navalign">
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="https://www.facebook.com/CycleNewsHour/">Facebook</a></li>
-                  <li><a href="https://www.instagram.com/cyclenewshour/?hl=en">Instagram</a></li>
-                  <li><a href="https://twitter.com/CycleNewsHour">Twitter</a></li>
-                </ul>
-              </div>
-              <img src="media/logo.png" alt="test" width="290" height="259" id="logo">
-            </nav>
-          </li>
-        </ul>
-      </nav>
-    </div>
     <section>
       <article id="topnews">
         <h2>Top News</h2>
         <div class="top-img"></div>
       </article>
     </section>
-  </div>
 
   <main>
     <!-- Trending News -->
