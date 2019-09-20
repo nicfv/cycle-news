@@ -97,7 +97,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
             <div class="videos-img"></div>
           </section>
         </section>
-          <p class="more"><a href="../videos/index.html">More Videos</a></p>
+          <p class="more"><a href="/Videos">More Videos</a></p>
       </article>
 
       <article>
