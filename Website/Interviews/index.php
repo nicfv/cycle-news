@@ -1,3 +1,6 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,5 +13,14 @@
 </head>
 <body>
     <!-- HTML Page Starts Here -->
+    <?php printNav(); ?>
+    
+    <section>
+      <article id="Featured-Video">
+        <h2>Interviews</h2>
+        <div class="top-img"></div>
+      </article>
+    </section>
+
 </body>
 </html>
