@@ -26,43 +26,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <!-- Trending News -->
     <section id="trending">
       <h2>Trending</h2>
-      <?php printArticle(1, "tablet"); ?>
-
-      <article>
-        <section>
-          <div class="trend-img"></div>
-        </section>
-        <section class="tablet">
-          <h4 class="category"><a>CATEGORY</a></h4>
-          <h3><a href="#">Article Title</a></h3>
-          <h4 class="author">Author</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
-      </article>
-
-      <article>
-        <section>
-          <div class="trend-img"></div>
-        </section>
-        <section class="tablet">
-          <h4 class="category"><a>CATEGORY</a></h4>
-          <h3><a href="#">Article Title</a></h3>
-          <h4 class="author">Author</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
-      </article>
-
-      <article>
-        <section>
-          <div class="trend-img"></div>
-        </section>
-        <section class="tablet">
-          <h4 class="category"><a>CATEGORY</a></h4>
-          <h3><a href="#">Article Title</a></h3>
-          <h4 class="author">Author</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
-      </article>
+      <?php getRecent(null, 3, "desktop") ?>
     </section>
 
 
@@ -70,30 +34,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <!-- Recent Articles -->
     <section id="recent">
       <h2>Recent Articles</h2>
-      <article>
-        <section>
-          <div class="recent-img"></div>
-        </section>
-        <section class="desktop">
-          <h4 class="category"><a>CATEGORY</a></h4>
-          <h3><a href="#">Article Title</a></h3>
-          <h4 class="author">Author</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
-      </article>
-
-      <article>
-        <section>
-          <div class="recent-img"></div>
-        </section>
-        <section class="desktop">
-          <h4 class="category"><a>CATEGORY</a></h4>
-          <h3><a href="#">Article Title</a></h3>
-          <h4 class="author">Author</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
-      </article>
-    </section>
+      <?php getRecent(null, 2, "desktop") ?>
 
     <!-- Videos, Social, Subscribe -->
     <section id="aside">

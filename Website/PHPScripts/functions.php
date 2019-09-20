@@ -46,27 +46,34 @@ function getImg($id) {
 function getDiv($id) {
     $division = strtolower(substr(getcol('articles', $id, 'division'), 0, 1));
     $divstr = null;
+    $urlstr = null;
     switch($division) {
         case 'i':
             $divstr = 'International';
+            $urlstr = 'International';
             break;
         case 'u':
             $divstr = 'U.S. and Politics';
+            $urlstr = 'Politics';
             break;
         case 'b':
             $divstr = 'Business';
+            $urlstr = 'Business';
             break;
         case 'c':
             $divstr = 'Science and Conservation';
+            $urlstr = 'Science';
             break;
         case 'l':
             $divstr = 'Local';
+            $urlstr = 'Local';
             break;
         case 's':
             $divstr = 'Sports';
+            $urlstr = 'Sports';
             break;
     }
-    return '<a href="/Division?topic='.$divstr.'" title="Click to read '.$divstr.' articles.">'.$divstr.'</a>';
+    return '<a href="/Division?topic='.$urlstr.'" title="Click to read '.$divstr.' articles.">'.$divstr.'</a>';
 }
 
 // Call this function to write the article thumbnail block onto the screen. id = Article ID, layout = Window Layout (e.g. desktop, tablet)
@@ -83,6 +90,21 @@ function printArticle($id, $layout) {
       <p>'.trim(substr(getSummary($id), 0, 100)).'...</p>
     </section>
   </article>';
+}
+
+// Call this function to print several recent articles. Parameters: Division/Null, Maximum Amount to Print, Desktop/Tablet/Mobile
+function getRecent($div, $limit, $layout) {
+    global $dbname;
+    $result = null;
+    if($div) {
+        $result = query('SELECT id FROM `'.$dbname.'`.`articles` WHERE division="'.$div.'" ORDER BY id DESC LIMIT '.(int)$limit.';');
+    } else {
+        $result = query('SELECT id FROM `'.$dbname.'`.`articles` ORDER BY id DESC LIMIT '.(int)$limit.';');
+    }
+    while($row = mysqli_fetch_assoc($result)) {
+        printArticle($row['id'], $layout);
+    }
+
 }
 
 ?>

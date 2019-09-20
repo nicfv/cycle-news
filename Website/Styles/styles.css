@@ -194,7 +194,7 @@ article p, time {
   display: none;
 }
 
-.category, .more a {
+.category, .category a, .more a {
   color: #5CB7A1;
 }
 
@@ -204,7 +204,7 @@ article p, time {
   width: 5.5em;
 }
 
-.category:hover, h3 a:hover, .more a:hover {
+.category:hover, .category:hover a, h3 a:hover, .more a:hover {
   color: #BD1F1A;
 }
 
@@ -724,7 +724,7 @@ iframe{
     font-size: 55px;
   }
 
-  #division .division-desktop {
+  #division article {
     display: flex;
   }
 
