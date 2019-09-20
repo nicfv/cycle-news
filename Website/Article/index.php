@@ -26,13 +26,16 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
     <!-- Single Post Article -->
     <section id="desktop-flex">
       <section id="post">
-        <h4 class="category"><?php getDiv($_GET['id']); ?></h4>
+        <h4 class="category"><?php echo getDiv($_GET['id']); ?></h4>
         <article>
-          <h2 class="title"><?php getTitle($_GET['id']); ?></h2>
-          <h3><?php getAuthor($_GET['id']); echo ' - '; getNewsDate($_GET['id']); ?></h3>
-          <div class="post-img"></div>
-          <img src="../Media/soundcloud.png" alt="image" width="400" id="soundcloud">
-          <?php getSummary($_GET['id']); ?>
+          <h2 class="title"><?php echo getTitle($_GET['id']); ?></h2>
+          <h3><?php echo getAuthor($_GET['id']).' - '.getNewsDate($_GET['id']); ?></h3>
+          <div class="post-img"><?php echo getImg($_GET['id']); ?></div>
+          <!-- <img src="../Media/soundcloud.png" alt="image" width="400" id="soundcloud"> -->
+          <?php
+            echo getSoundcloud($_GET['id']);
+            echo '<p>'.getSummary($_GET['id']).'</p>';
+          ?>
         </article>
 
         <section id="share-buttons">

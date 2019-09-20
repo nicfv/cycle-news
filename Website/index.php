@@ -26,6 +26,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <!-- Trending News -->
     <section id="trending">
       <h2>Trending</h2>
+      <?php printArticle(1, "tablet"); ?>
+
       <article>
         <section>
           <div class="trend-img"></div>

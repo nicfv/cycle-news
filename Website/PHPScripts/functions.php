@@ -10,35 +10,36 @@ function printnav() {
 
 // Call this function to print the title of the article with the given ID.
 function getTitle($id) {
-    echo getcol('articles', $id, 'title');
+    return '<a href="/Article?id='.$id.'" title="Click here to read more.">'.getcol('articles', $id, 'title').'</a>';
 }
 
 // Call this function to print the author of the article with the given ID.
 function getAuthor($id) {
-    echo getcol('articles', $id, 'author');
+    return getcol('articles', $id, 'author');
 }
 
 // Call this function to print the date of the article with the given ID.
 function getNewsDate($id) {
-    echo getcol('articles', $id, 'relevant');
+    return getcol('articles', $id, 'relevant');
 }
 
 // Call this function to print the summary of the article with the given ID.
 function getSummary($id) {
-    echo getcol('articles', $id, 'summary');
+    return getcol('articles', $id, 'summary');
 }
 
 // Call this function to print the embedded soundcloud of the article with the given ID.
 function getSoundcloud($id) {
-    echo getcol('articles', $id, 'sc');
+    return getcol('articles', $id, 'sc');
 }
 
 // Call this function to print the IMAGE ELEMENT of the article with the given ID.
 function getImg($id) {
     $imgpath = getcol('articles', $id, 'imgpath');
     if($imgpath) {
-        echo '<img src="'.$imgpath.'">';
+        return '<img class="thumbnail-img" src="'.$imgpath.'">';
     }
+    return null;
 }
 
 // Call this function to print the division of the article with the given ID.
@@ -65,7 +66,23 @@ function getDiv($id) {
             $divstr = 'Sports';
             break;
     }
-    echo '<a href="/Division?topic='.$divstr.'" title="Click to read articles on '.$divstr.' news.">'.$divstr.'</a>';
+    return '<a href="/Division?topic='.$divstr.'" title="Click to read '.$divstr.' articles.">'.$divstr.'</a>';
+}
+
+// Call this function to write the article thumbnail block onto the screen. id = Article ID, layout = Window Layout (e.g. desktop, tablet)
+function printArticle($id, $layout) {
+    echo '
+    <article>
+    <section>
+      <div class="recent-img">'.getImg($id).'</div>
+    </section>
+    <section class="'.$layout.'">
+      <h4 class="category">'.getDiv($id).'</h4>
+      <h3>'.getTitle($id).'</h3>
+      <h4 class="author">'.getAuthor($id).'</h4>
+      <p>'.trim(substr(getSummary($id), 0, 100)).'...</p>
+    </section>
+  </article>';
 }
 
 ?>

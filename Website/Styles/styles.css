@@ -16,7 +16,7 @@ header, #mobileNav ul li {
 }
 
 .trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img, .vid-img {
-  padding: 8em;
+  padding: 1em;
 }
 
 .trend-img, .recent-img, .videos-img, #division .recent-img, .post-img, .vid-img {
@@ -148,6 +148,14 @@ h1 {
 }
 
 /* **************** Mobile Articles Layout ************** */
+h2.title, h2.title a, h2.title a:link, h2.title a:visited {
+  color:black;
+}
+
+h2.title a:hover, h2.title a:active {
+  color:#BD1F1A;
+}
+
 section h2 {
   color: #318c75;
   font-size: 35px;
@@ -470,7 +478,8 @@ iframe{
   }
 
   a {
-    font-size: 18px;
+    /* font-size: 18px; */
+    text-decoration: none;
   }
 
   nav h2 {
@@ -503,7 +512,7 @@ iframe{
   }
 
   .trend-img, .recent-img, #division .recent-img {
-    width: 40%;
+    width: 100%;
   }
 
   .tablet, .desktop {
@@ -535,7 +544,7 @@ iframe{
 
   /* **************** Single Article Post Tablet *****************/
   #main-article .post-img {
-    padding: 12em;
+    padding: 1.2em;
   }
 
   #soundcloud {
@@ -661,8 +670,8 @@ iframe{
   }
 
   .recent-img {
-    width: 40%;
-    padding: 13em;
+    width: 100%;
+    padding: 1em;
   }
 
   .desktop {
@@ -749,11 +758,11 @@ iframe{
   }
 
   #main-article .recent-img {
-    padding: 8em;
+    padding: 1em;
   }
 
   #main-article .post-img {
-    padding: 15em;
+    padding: 1.5em;
   }
 
   #main-article p {

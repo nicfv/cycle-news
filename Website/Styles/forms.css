@@ -57,6 +57,13 @@ form#contactform a {
     text-decoration: none;
 }
 
+/* OTHER */
+
+img.thumbnail-img {
+    width: 100%;
+    height: auto;
+}
+
 /* SELECTION */
 
 /* Remove blue border from tab select. */
