@@ -13,6 +13,11 @@ header, #mobileNav ul li {
 /* Placeholder for Images and Articles */
 .trend-img, .recent-img, .videos-img, .top-img, .social-img, #division .recent-img, .post-img, .comment-img, .vid-img {
   background-color: #adf1f7;
+  text-align: center;
+}
+
+.post-img {
+  max-height: 720px;
 }
 
 .trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img, .vid-img {
@@ -512,11 +517,12 @@ iframe{
   }
 
   .trend-img, .recent-img, #division .recent-img {
-    width: 100%;
+    width: 256px;
+    height: 144px;
   }
 
   .tablet, .desktop {
-    margin-left: 7em;
+    margin-left: 1em;
     width: 50%;
   }
 
@@ -574,7 +580,7 @@ iframe{
 }
 
 .video-title{
-  background-color: #FFF;
+  background-color: transparent;
   color: #5CB7A1;
   width: 60%;
   border-bottom: 10px solid #5CB7A1;
@@ -670,7 +676,8 @@ iframe{
   }
 
   .recent-img {
-    width: 100%;
+    width: 256px;
+    height: 144px;
     padding: 1em;
   }
 
@@ -685,7 +692,7 @@ iframe{
   }
 
   #aside {
-    background-color: #FFF;
+    background-color: transparent;
     padding-right: 0.5em;
     width: 30%;
   }
@@ -729,7 +736,7 @@ iframe{
   }
 
   #division .desktop {
-    margin-left: 7em;
+    margin-left: 1em;
     padding-right: 1em;
   }
 
@@ -753,7 +760,7 @@ iframe{
   }
 
   #main-article #aside {
-    margin-top: 7em;
+    margin-top: 1em;
     padding-left: 2em;
   }
 

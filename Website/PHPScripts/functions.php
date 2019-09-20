@@ -34,10 +34,10 @@ function getSoundcloud($id) {
 }
 
 // Call this function to return the IMAGE ELEMENT of the article with the given ID.
-function getImg($id) {
+function getImg($id, $divclass = 'recent-img') {
     $imgpath = getcol('articles', $id, 'imgpath');
     if($imgpath) {
-        return '<img class="thumbnail-img" src="'.$imgpath.'">';
+        return '<div class="'.$divclass.'"><img class="thumbnail-img" src="'.$imgpath.'"></div>';
     }
     return null;
 }
@@ -86,7 +86,7 @@ function printArticle($id, $layout) {
     echo '
     <article>
     <section>
-      <div class="recent-img">'.getImg($id).'</div>
+      '.getImg($id).'
     </section>
     <section class="'.$layout.'">
       <h4 class="category">'.getDiv($id).'</h4>

@@ -30,7 +30,7 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
         <article>
           <h2 class="title"><?php echo getTitle($_GET['id']); ?></h2>
           <h3><?php echo getAuthor($_GET['id']).' - '.getNewsDate($_GET['id']); ?></h3>
-          <div class="post-img"><?php echo getImg($_GET['id']); ?></div>
+          <?php echo getImg($_GET['id'], 'post-img'); ?>
           <!-- <img src="../Media/soundcloud.png" alt="image" width="400" id="soundcloud"> -->
           <?php
             echo getSoundcloud($_GET['id']);
