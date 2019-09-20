@@ -15,11 +15,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
 
 <?php
   printNav();
+  $div_topic_get = null;
   $div_topic_title = 'All';
   $div_topic = null;
   $div_limit = 10000;
   if(isset($_GET['topic'])) {
-    switch($_GET['topic']) {
+    $div_topic_get = $_GET['topic'];
+    switch($div_topic_get) {
       case 'International':
         $div_topic = 'i';
         $div_topic_title = 'International';
@@ -52,6 +54,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         break;
     }
   }
+  if(isset($_GET['more'])) {
+    $div_limit = 10000;
+  }
 ?>
   <section>
     <article id="division-heading">
@@ -67,6 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
       <?php
         getRecent(null, 2, "desktop");
       ?>
+    </section>
 
     <!-- Recent Division Articles -->
     <section id="division">
@@ -74,7 +80,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
       <?php
         getRecent($div_topic, $div_limit, "desktop");
       ?>
-      <p class="more"><a href="#">More Articles</a></p>
+      <p class="more"><a href="/Division?topic=<?php echo $div_topic_get.'&more'; ?>">More Articles</a></p>
     </section>
 
     <!-- Videos, Social, Subscribe -->

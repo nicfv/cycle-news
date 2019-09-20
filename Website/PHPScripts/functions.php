@@ -8,32 +8,32 @@ function printnav() {
     writefilecontents('/Scripts/nav.html');
 }
 
-// Call this function to print the title of the article with the given ID.
+// Call this function to return the title of the article with the given ID.
 function getTitle($id) {
     return '<a href="/Article?id='.$id.'" title="Click here to read more.">'.getcol('articles', $id, 'title').'</a>';
 }
 
-// Call this function to print the author of the article with the given ID.
+// Call this function to return the author of the article with the given ID.
 function getAuthor($id) {
     return getcol('articles', $id, 'author');
 }
 
-// Call this function to print the date of the article with the given ID.
+// Call this function to return the date of the article with the given ID.
 function getNewsDate($id) {
     return getcol('articles', $id, 'relevant');
 }
 
-// Call this function to print the summary of the article with the given ID.
+// Call this function to return the summary of the article with the given ID.
 function getSummary($id) {
     return getcol('articles', $id, 'summary');
 }
 
-// Call this function to print the embedded soundcloud of the article with the given ID.
+// Call this function to return the embedded soundcloud of the article with the given ID.
 function getSoundcloud($id) {
     return getcol('articles', $id, 'sc');
 }
 
-// Call this function to print the IMAGE ELEMENT of the article with the given ID.
+// Call this function to return the IMAGE ELEMENT of the article with the given ID.
 function getImg($id) {
     $imgpath = getcol('articles', $id, 'imgpath');
     if($imgpath) {
@@ -42,9 +42,14 @@ function getImg($id) {
     return null;
 }
 
-// Call this function to print the division of the article with the given ID.
+// Call this function to return the division ID of the article with the diven ID.
+function getDivID($id) {
+    return strtolower(substr(getcol('articles', $id, 'division'), 0, 1));
+}
+
+// Call this function to return the division of the article with the given ID.
 function getDiv($id) {
-    $division = strtolower(substr(getcol('articles', $id, 'division'), 0, 1));
+    $division = getDivID($id);
     $divstr = null;
     $urlstr = null;
     switch($division) {

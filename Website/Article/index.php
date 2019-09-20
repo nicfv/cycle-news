@@ -49,54 +49,10 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
       <!-- Recent Division Articles -->
       <section id="aside">
         <h2>Related Articles</h2>
-        <article id="related-desktop">
-          <section>
-            <div class="recent-img"></div>
-          </section>
-          <section class="desktop">
-            <h4 class="category"><a>CATEGORY</a></h4>
-            <h3><a href="index.html">Article Title</a></h3>
-            <h4 class="author">Author</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </section>
-        </article>
-
-        <article class="related-desktop">
-          <section>
-            <div class="recent-img"></div>
-          </section>
-          <section class="desktop">
-            <h4 class="category"><a>CATEGORY</a></h4>
-            <h3><a href="index.html">Article Title</a></h3>
-            <h4 class="author">Author</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </section>
-        </article>
+        <?php getRecent(getDivID($_GET['id']), 2, "desktop") ?>
 
         <h2>Trending Articles</h2>
-        <article class="trending-desktop">
-          <section>
-            <div class="recent-img"></div>
-          </section>
-          <section class="desktop">
-            <h4 class="category"><a>CATEGORY</a></h4>
-            <h3><a href="index.html">Article Title</a></h3>
-            <h4 class="author">Author</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </section>
-        </article>
-
-        <article class="related-desktop">
-          <section>
-            <div class="recent-img"></div>
-          </section>
-          <section class="desktop">
-            <h4 class="category"><a>CATEGORY</a></h4>
-            <h3><a href="index.html">Article Title</a></h3>
-            <h4 class="author">Author</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </section>
-        </article>
+        <?php getRecent(null, 2, "desktop") ?>
 
         <article id="subscribe">
           <h2>Join our Mailing List</h2>

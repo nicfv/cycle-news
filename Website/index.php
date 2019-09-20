@@ -35,6 +35,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <section id="recent">
       <h2>Recent Articles</h2>
       <?php getRecent(null, 2, "desktop") ?>
+    </section>
 
     <!-- Videos, Social, Subscribe -->
     <section id="aside">
