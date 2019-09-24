@@ -127,6 +127,7 @@ img.thumbnail-img {
 
 article * {
     box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 /* SELECTION */

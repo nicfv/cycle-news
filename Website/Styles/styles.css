@@ -206,7 +206,8 @@ article p, time {
 .category {
   padding-bottom: 0.25em;
   border-bottom: 1.5px solid #5CB7A1;
-  width: 5.5em;
+  /* width: 5.5em; */
+  width: max-content;
 }
 
 .category:hover, .category:hover a, h3 a:hover, .more a:hover {

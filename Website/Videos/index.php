@@ -156,7 +156,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
       </form>
     </article>
   </footer>
-  <script src="../script.js"></script>
+  <script src="../Scripts/script.js"></script>
 </body>
 
 </html>
