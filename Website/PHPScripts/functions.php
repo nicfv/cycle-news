@@ -92,7 +92,7 @@ function printArticle($id, $layout) {
       <h4 class="category">'.getDiv($id).'</h4>
       <h3>'.getTitle($id).'</h3>
       <h4 class="author">'.getAuthor($id).'</h4>
-      <p>'.trim(substr(getSummary($id), 0, 100)).'...</p>
+      <p>'.trim(substr(getSummary($id), 0, 100)).(getSummary($id)?'...':'').'</p>
     </section>
   </article>';
 }

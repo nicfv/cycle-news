@@ -16,6 +16,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     printnav();
 
     $success_a = false;
+    $a_title = null;
+    $a_author = null;
+    $a_date = null;
+    $a_summary = null;
+    $a_sc = null;
+    $a_img = null;
+    $a_div = null;
     if(isset($_POST['a_title']) || isset($_POST['a_author'])
     || isset($_POST['a_date']) || isset($_POST['a_summary'])
     || isset($_POST['a_sc']) || isset($_POST['a_img'])
@@ -52,12 +59,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <!-- HTML Page Starts Here -->
     <form id="uploadform" action="/Upload/" method="POST">
         <h1>Upload an article here!</h1>
-        <input type="text" name="a_title" placeholder="Title" <?php if($a_title){echo 'value="'.$a_title.'"'} ?>> * Required<br>
-        <input type="text" name="a_author" placeholder="Author" <?php if($a_author){echo 'value="'.$a_author.'"'} ?>><br>
+        <input type="text" name="a_title" placeholder="Title" <?php if($a_title){echo 'value="'.$a_title.'"';} ?>> * Required<br>
+        <input type="text" name="a_author" placeholder="Author" <?php if($a_author){echo 'value="'.$a_author.'"';} ?>><br>
         <input type="date" name="a_date"><br>
         <textarea name="a_summary" placeholder="Summary"><?php if($a_summary){echo $a_summary;} ?></textarea> * Recommended<br>
-        <input type="text" name="a_sc" placeholder="SoundCloud Embed" <?php if($a_sc){echo 'value="'.$a_sc.'"'} ?>> * Recommended <a onclick="alert('This is the code for embedding a SoundCloud audio. This is not the link to SoundCloud! Go to your SoundCloud audio > \'share\' > \'embed\' to find the code, and copy and paste it here.');" href="#">[?]</a><br>
-        <input type="text" name="a_img" placeholder="Image Path" <?php if($a_img){echo 'value="'.$a_img.'"'} ?>><br>
+        <input type="text" name="a_sc" placeholder="SoundCloud Embed" <?php if($a_sc){echo 'value="'.htmlspecialchars($a_sc).'"';} ?>> * Recommended <a onclick="alert('This is the code for embedding a SoundCloud audio. This is not the link to SoundCloud! Go to your SoundCloud audio > \'share\' > \'embed\' to find the code, and copy and paste it here.');" href="#">[?]</a><br>
+        <input type="text" name="a_img" placeholder="Image Path" <?php if($a_img){echo 'value="'.$a_img.'"';} ?>><br>
         <select name="a_div">
             <option value="i">International</option>
             <option value="u">U.S. and Politics</option>
