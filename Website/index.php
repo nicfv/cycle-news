@@ -64,13 +64,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <p class="more"><a href="/Videos">More Videos</a></p>
       </article>
 
-      <article>
-        <h2>Social Media Feeds</h2>
-        <div class="social-img"></div>
-        <div class="social-img"></div>
-        <div class="social-img"></div>
-      </article>
-      
+      <!-- <article>
+        <div id="share-buttons-normal">
+          <h2>Social Media Feeds</h2>
+          <br>
+          <a href="https://twitter.com/cyclenewshour?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @cyclenewshour</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <br><br>
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+          <div class="fb-like" data-href="https://www.facebook.com/CycleNewsHour/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div><br><br>
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channelid="UCPmgC5_PHtrL7r3Z29DF9gw" data-layout="default" data-count="default"></div>
+          <br><br>
+          <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fcyclenewshour&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe>
+        </div>
+      </article> -->
+      <?php printsocials(); ?>
+
   </main>
 
   <?php printfooter(); ?>

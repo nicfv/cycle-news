@@ -39,10 +39,17 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
         </article>
 
         <section id="share-buttons">
-          <a><img src="../Media/facebook.png" alt="facebook share button" width="65" height="65" id="fb"></a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <br><br>
+          <div id="fb-root"></div>
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+          <div class="fb-share-button" data-href="http://cnh.16mb.com/Article/?id="<?php $_GET['id'] ?> data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcnh.16mb.com%2FArticle%2F%3Fid%3D<?php $_GET['id'] ?>&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+          <br><br>
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channelid="UCPmgC5_PHtrL7r3Z29DF9gw" data-layout="default" data-count="default"></div>          <!-- <a><img src="../Media/facebook.png" alt="facebook share button" width="65" height="65" id="fb"></a>
           <a><img src="../Media/twitter.png" alt="twitter share button" width="65" height="65" id="twitter"></a>
           <a><img src="../Media/instagram.png" alt="instagram share button" width="65" height="65" id="insta"></a>
-          <a><img src="../Media/email.png" alt="email share button" width="65" height="65" id="mail"></a>
+          <a><img src="../Media/email.png" alt="email share button" width="65" height="65" id="mail"></a> -->
         </section>
       </section>
 

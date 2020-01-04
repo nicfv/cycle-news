@@ -100,12 +100,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
           <p class="more"><a href="/Videos">More Videos</a></p>
       </article>
 
-      <article>
+      <?php printsocials(); ?>
+
+      <!-- <article>
         <h2>Social Media Feeds</h2>
         <div class="social-img"></div>
         <div class="social-img"></div>
         <div class="social-img"></div>
-      </article>
+      </article> -->
 
       <!-- <article id="subscribe">
         <h2>Join our Mailing List</h2>

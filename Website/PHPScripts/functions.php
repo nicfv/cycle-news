@@ -27,6 +27,11 @@ function printfooter() {
     echo '</footer>';
 }
 
+// Call this function to print the navigation bar onto the HTML document.
+function printsocials() {
+    writefilecontents('/Scripts/socials.html');
+}
+
 // Call this function to return the title of the article with the given ID.
 function getTitle($id) {
     return '<a href="/Article?id='.$id.'" title="Click here to read more.">'.getcol('articles', $id, 'title').'</a>';

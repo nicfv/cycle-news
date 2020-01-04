@@ -298,6 +298,14 @@ input[type="text"], .button {
   padding-bottom: 1em;
 }
 
+#share-buttons *, #share-buttons-normal * {
+  margin:0;
+  padding:0;
+  border:0;
+  /* margin-left: 1em;
+  padding-bottom: 1em; */
+}
+
 #share-buttons a {
   padding-right: 0.75em;
 }
@@ -810,8 +818,8 @@ iframe{
   #share-buttons {
     width: 75px;
     position: fixed;
-    top: 17em;
-    left: 2em;
+    top: 15em;
+    left: 1em;
   }
 
   #share-buttons img {
