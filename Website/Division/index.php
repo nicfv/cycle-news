@@ -107,18 +107,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <div class="social-img"></div>
       </article>
 
-      <article id="subscribe">
+      <!-- <article id="subscribe">
         <h2>Join our Mailing List</h2>
         <form>
           <input type="text" name="email" id="email" required>
           <input type="submit" value="Subscribe" class="button" id="submit">
         </form>
-      </article>
+      </article> -->
     </section>
   </main>
 
 
-  <footer>
+  <!-- <footer>
     <article id="subscribe2">
       <h2>Join our Mailing List</h2>
       <form>
@@ -126,7 +126,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <input type="submit" value="Subscribe" class="button" id="submit2">
       </form>
     </article>
-  </footer>
+  </footer> -->
+  
+<?php printfooter(); ?>
   <script src="../Scripts/script.js"></script>
 </body>
 

@@ -54,17 +54,18 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
         <h2>Trending Articles</h2>
         <?php getRecent(null, 2, "desktop") ?>
 
-        <article id="subscribe">
+        <!-- <article id="subscribe">
           <h2>Join our Mailing List</h2>
           <form>
             <input type="text" name="email" id="email" required>
             <input type="submit" value="Subscribe" class="button" id="submit">
           </form>
-        </article>
+        </article> -->
       </section>
     </section>
   </main>
 
+<!--
   <section id="comment-section">
     <h2>Comment Section</h2>
     <section>
@@ -85,9 +86,9 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
       <p></p>
     </section>
   </section>
+-->
 
-  <footer>
-  </footer>
+<?php printfooter(); ?>
 </body>
 
 </html>

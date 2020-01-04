@@ -70,27 +70,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <div class="social-img"></div>
         <div class="social-img"></div>
       </article>
-
-      <article id="subscribe">
-        <h2>Join our Mailing List</h2>
-        <form>
-          <input type="text" name="email" id="email" required>
-          <input type="submit" value="Subscribe" class="button" id="submit">
-        </form>
-      </article>
-    </section>
+      
   </main>
 
-
-  <footer>
-    <article id="subscribe2">
-      <h2>Join our Mailing List</h2>
-      <form>
-        <input type="text" name="email2" id="email2" required>
-        <input type="submit" value="Subscribe" class="button" id="submit2">
-      </form>
-    </article>
-  </footer>
+  <?php printfooter(); ?>
   <script src="../Scripts/script.js"></script>
 </body>
 

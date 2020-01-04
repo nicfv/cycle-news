@@ -329,7 +329,8 @@ input[type="text"], .button {
 }
 
 /* ******* Comment Section ******* */
-#comment-section h2 {
+
+/* #comment-section h2 {
   border-top: 1px solid gray;
   color: #EAB442;
 }
@@ -357,7 +358,7 @@ textarea {
 
 #comment-section .button {
   margin-left: 8.5em;
-}
+} */
 
 /* ********** Mobile Videos Section ********* */
 iframe{

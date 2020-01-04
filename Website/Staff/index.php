@@ -22,5 +22,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
       </article>
     </section>
 
+<?php printfooter(); ?>
 </body>
 </html>

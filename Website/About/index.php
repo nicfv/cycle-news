@@ -21,5 +21,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <div class="top-img"></div>
       </article>
     </section>
+    
+<?php printfooter(); ?>
 </body>
 </html>

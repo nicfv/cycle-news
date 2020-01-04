@@ -8,6 +8,25 @@ function printnav() {
     writefilecontents('/Scripts/nav.html');
 }
 
+// Call this function to print the footer onto the HTML document.
+function printfooter() {
+    global $dbname;
+    echo '<footer>';
+    if(isset($_POST['email'])) {
+        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            if(query('INSERT INTO `'.$dbname.'`.`subscriptions` (email) VALUES ("'.$_POST['email'].'");')) {
+            echo '<p class="success">Thank you for subscribing!</p>';
+            } else {
+            echo '<p class="error">An error occurred. Could not subscribe. Please try again.</p>';
+            }
+        } else {
+            echo '<p class="error">Invalid email format</p>';
+        }
+    }
+    writefilecontents('/Scripts/footer.html');
+    echo '</footer>';
+}
+
 // Call this function to return the title of the article with the given ID.
 function getTitle($id) {
     return '<a href="/Article?id='.$id.'" title="Click here to read more.">'.getcol('articles', $id, 'title').'</a>';
