@@ -1,0 +1,38 @@
+see if new website can be put on wordpress
+
+delete all dummy reports
+
+make delete function on website
+
+add banner image
+
+add global password in upload form
+
+look for different font for headings (lato, futura, playfair display, bodoni)
+
+remove blue borders from videos, images...
+
+add bike path videos on videos page
+
+ask angelika about her css
+
+put CJ's about page on the website
+
+page counters
+
+get rid of features that we aren't using rn
+    mailing list
+    feeds
+    events
+    interviews
+
+socials
+    facebook
+    instagram
+    twitter
+    email (later?)
+    soundcloud
+
+photos page
+
+2020 election thing

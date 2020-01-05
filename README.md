@@ -39,3 +39,4 @@ Written in PHP, HTML, and CSS.
 * Nic's Contact Page: http://cnh.16mb.com/Contact/
 * Menu button source code: https://jonsuh.com/hamburgers/
 * Facebook Share Link: https://developers.facebook.com/docs/plugins/share-button/#configurator
+* Social Buttons: https://sharethis.com/onboarding-follow/
