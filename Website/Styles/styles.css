@@ -2,7 +2,7 @@
 
 /* ***************************** For Mobile Screens ***************************** */
 body {
-  width: 375px;
+  width: 100%;
   font-family: 'Muli', sans-serif;
 }
 
@@ -20,7 +20,7 @@ header, #mobileNav ul li {
   max-height: 720px;
 }
 
-.trend-img, .recent-img, .videos-img, .top-img, #division .recent-img, .post-img, .vid-img {
+.trend-img, .recent-img, .videos-img, #division .recent-img, .post-img, .vid-img {
   padding: 1em;
 }
 
@@ -396,6 +396,17 @@ iframe{
   line-height: 1.5em;
 }
 
+/* ******************************** For all Screens **************************** */
+
+.top-img {
+  padding: 0;
+  height: 15em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* ***************************** For Tablets Screens *****************************/
 @media only screen and (min-width: 600px) {
   body {
@@ -672,7 +683,12 @@ iframe{
   }
 
   .top-img {
-    padding: 13em;
+    height: 25em;
+  }
+
+  .bannerimg {
+    width: 100%;
+    height: auto;
   }
 
   #trending, #division-topstories {

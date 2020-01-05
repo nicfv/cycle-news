@@ -18,7 +18,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <section>
       <article id="Featured-Video">
         <h2>Staff</h2>
-        <div class="top-img"></div>
+        <div class="top-img" style="background-image:url('/Media/StaffBanner.jpg');"></div>
       </article>
     </section>
 
