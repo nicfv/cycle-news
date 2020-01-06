@@ -21,6 +21,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <div class="top-img" style="background-image:url('/Media/StaffBanner.jpg');"></div>
       </article>
     </section>
+    <p>Placeholder for staff entries.</p>
 
 <?php printfooter(); ?>
 </body>

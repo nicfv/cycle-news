@@ -33,7 +33,8 @@ if(!isset($_GET['id']) || !is_numeric($_GET['id']) || !getcol('articles', $_GET[
           <?php echo getImg($_GET['id'], 'post-img'); ?>
           <!-- <img src="../Media/soundcloud.png" alt="image" width="400" id="soundcloud"> -->
           <?php
-            echo getSoundcloud($_GET['id']);
+            // echo getSoundcloud($_GET['id']);
+            echo getAudio($_GET['id']);
             echo '<p>'.getSummary($_GET['id']).'</p>';
           ?>
         </article>

@@ -53,8 +53,13 @@ function getSummary($id) {
 }
 
 // Call this function to return the embedded soundcloud of the article with the given ID.
-function getSoundcloud($id) {
+/* function getSoundcloud($id) {
     return getcol('articles', $id, 'sc');
+} */
+
+// Call this function to return the embedded audio file of the article with the given ID.
+function getAudio($id) {
+    return '<audio controls><source src="'.getcol('articles', $id, 'mp3').'">Your browser does not support embedded audio.</audio>';
 }
 
 // Call this function to return the IMAGE ELEMENT of the article with the given ID.
