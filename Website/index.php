@@ -39,6 +39,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
 
     <!-- Videos, Social, Subscribe -->
     <section id="aside">
+    <?php getVids(4, 240, 160); ?>
+    <!-- <section id="aside">
       <article>
         <h2>Videos</h2>
         <section class="videos">
@@ -62,7 +64,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
           </section>
         </section>
         <p class="more"><a href="/Videos">More Videos</a></p>
-      </article>
+      </article> -->
 
       <!-- <article>
         <div id="share-buttons-normal">
@@ -80,6 +82,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         </div>
       </article> -->
       <?php printsocials(); ?>
+    </section>
 
   </main>
 

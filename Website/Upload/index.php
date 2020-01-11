@@ -42,7 +42,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         // $a_img = safestring($_POST['a_img']);
         $a_div = safestring($_POST['a_div']);
         // Define target file paths.
-        $target_img_name = '/'.'Uploads/'.basename($_FILES['a_img']["name"]);
+        $target_img_name = '/'.'Uploads/'.basename($_FILES['a_img']["name"]); if(!basename($_FILES['a_img']["name"])) { $target_img_name = null; }
         $target_mp3_name = '/'.'Uploads/'.basename($_FILES['a_audio']["name"]);
         $target_img = $_SERVER['DOCUMENT_ROOT'].$target_img_name;
         $target_mp3 = $_SERVER['DOCUMENT_ROOT'].$target_mp3_name;
@@ -54,23 +54,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
             echo '<p class="error">Missing summary or summary is too short!</p>';
         // } else if(strlen($a_sc) > 0 && (strlen($a_sc) < 7 || substr($a_sc, 0, 7) != '<iframe')) { // Check to make sure soundcloud starts with '<iframe'
             // echo '<p class="error">The SoundCloud embed is not the right format.</p>';
-        } else if($_FILES['a_img']["size"] < 1) {
-            echo '<p class="error">Missing image!</p>';
+        // } else if($_FILES['a_img']["size"] < 1) {
+            // echo '<p class="error">Missing image!</p>';
         } else if($_FILES['a_audio']["size"] < 1) {
             echo '<p class="error">Missing audio!</p>';
-        } else if(!getimagesize($_FILES['a_img']["tmp_name"])) {
+        } else if($_FILES['a_img']["size"] > 0 && !getimagesize($_FILES['a_img']["tmp_name"])) {
             echo '<p class="error">The image file is not in the right format.</p>';
         // } else if(explode("/", $_FILES['a_audio']['mime_type'])[0] != "audio") {
             // echo '<p class="error">The audio file is not in the right format.</p>';
-        } else if(!$_FILES['a_img']["size"] > 10000000) {
+        } else if($_FILES['a_img']["size"] > 0 && !$_FILES['a_img']["size"] > 10000000) {
             echo '<p class="error">The image file size is too large. Max 10mb</p>';
         } else if($_FILES['a_audio']["size"] > 100000000) {
             echo '<p class="error">The audio file size is too large. Max 100mb</p>';
-        } else if(file_exists($target_img)) {
+        } else if($_FILES['a_img']["size"] > 0 && file_exists($target_img)) {
             echo '<p class="error">This image file is already uploaded. Please rename and try again.</p>';
         } else if(file_exists($target_mp3)) {
             echo '<p class="error">This audio file is already uploaded. Please rename and try again.</p>';
-        } else if(!move_uploaded_file($_FILES['a_img']["tmp_name"], $target_img)) {
+        } else if($_FILES['a_img']["size"] > 0 && !move_uploaded_file($_FILES['a_img']["tmp_name"], $target_img)) {
             echo '<p class="error">Error uploading the image file. Try again.</p>';
         } else if(!move_uploaded_file($_FILES['a_audio']["tmp_name"], $target_mp3)) {
             echo '<p class="error">Error uploading the audio file. Try again.</p>';
@@ -99,7 +99,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <input type="date" name="a_date" <?php if($a_date2){echo 'value="'.$a_date2.'"';} ?>><br>
         <textarea name="a_summary" placeholder="Summary"><?php if($a_summary){echo $a_summary;} ?></textarea> * Recommended<br>
         <!-- <input type="text" name="a_sc" placeholder="SoundCloud Embed" <?php // if($a_sc){echo 'value="'.htmlspecialchars($a_sc).'"';} ?>> * Recommended <a onclick="alert('This is the code for embedding a SoundCloud audio. This is not the link to SoundCloud! Go to your SoundCloud audio > \'share\' > \'embed\' to find the code, and copy and paste it here.');" href="#">[?]</a><br> -->
-        <input type="file" name="a_audio"> Upload a mp3<br>
+        <input type="file" name="a_audio"> Upload mp3 or wav<br>
         <input type="file" name="a_img"> Upload an image<br>
         <select name="a_div">
             <option value="i" <?php if($a_div&&$a_div=='i'){echo 'selected';} ?>>International</option>

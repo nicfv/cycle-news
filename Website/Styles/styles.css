@@ -555,7 +555,7 @@ iframe{
 
   /* ******* Videos *********/
   .videos section {
-    width: 60%;
+    /* width: 60%; */
   }
 
   .more a {
@@ -584,34 +584,35 @@ iframe{
     margin: 0;
   }
 
-/* ********** Mobile Videos Section ********* */
-.vid-img{
-  padding: 10em 15em 10em 15em;
-}
+  /* ********** Mobile Videos Section ********* */
+  .vid-img{
+    padding: 10em 15em 10em 15em;
+  }
+
   .videos-flex{
-  display:flex;
-}
+    display:flex;
+  }
 
-iframe{
-  margin-left: 1em;
-  width: 300px;
-  height: 250px;
-}
+  iframe{
+    margin-left: 1em;
+    width: 300px;
+    height: 250px;
+  }
 
-.video-title{
-  background-color: transparent;
-  color: #5CB7A1;
-  width: 60%;
-  border-bottom: 10px solid #5CB7A1;
-  font-size: 30px;
-  padding: 1em 0.25em 0.25em 0.5em;
-}
+  .video-title{
+    background-color: transparent;
+    color: #5CB7A1;
+    width: 60%;
+    border-bottom: 10px solid #5CB7A1;
+    font-size: 30px;
+    padding: 1em 0.25em 0.25em 0.5em;
+  }
 
-.singleVid h3{
-  font-size: 20px;
-  line-height: 1.5em;
-  width: 80%;
-}
+  .singleVid h3{
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 80%;
+  }
 }
 
 /* ***************************** For Desktop Screens *****************************/
