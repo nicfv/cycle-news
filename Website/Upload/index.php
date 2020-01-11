@@ -15,15 +15,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <?php
     printnav();
 
-    $success_a = false;
     $a_title = null;
     $a_author = null;
     $a_date = null;
+    $a_date2 = null;
     $a_summary = null;
     // $a_sc = null;
     $a_img = null;
     $a_div = null;
-    $unique = uniqid();
     if(isset($_POST['a_title']) || isset($_POST['a_author'])
     || isset($_POST['a_date']) || isset($_POST['a_summary'])
     || isset($_POST['a_sc']) || isset($_POST['a_img'])
@@ -33,8 +32,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         $a_author = safestring($_POST['a_author']);
         if(!isset($_POST['a_date']) || strlen($_POST['a_date']) == 0) {
             $a_date = date('D, M j, Y');
+            $a_date2 = date('Y-m-d'); // For resetting the date picker.
         } else {
             $a_date = date('D, M j, Y', strtotime($_POST['a_date']));
+            $a_date2 = date('Y-m-d', strtotime($_POST['a_date'])); // For resetting the date picker.
         }
         $a_summary = safestring($_POST['a_summary']);
         // $a_sc = addslashes($_POST['a_sc']);
@@ -77,7 +78,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
             echo '<p class="error">Could not submit article! Try again!</p>';
         } else {
             echo '<p class="success">Uploaded article! Thank you!</p>';
-            $success_a = true;
+            // Set all to null because of success.
+            $a_title = null;
+            $a_author = null;
+            $a_date = null;
+            $a_date2 = null;
+            $a_summary = null;
+            // $a_sc = null;
+            $a_img = null;
+            $a_div = null;
         }
     }
 
@@ -87,18 +96,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <h1>Upload an article here!</h1>
         <input type="text" name="a_title" placeholder="Title" <?php if($a_title){echo 'value="'.$a_title.'"';} ?>> * Required<br>
         <input type="text" name="a_author" placeholder="Author" <?php if($a_author){echo 'value="'.$a_author.'"';} ?>><br>
-        <input type="date" name="a_date"><br>
+        <input type="date" name="a_date" <?php if($a_date2){echo 'value="'.$a_date2.'"';} ?>><br>
         <textarea name="a_summary" placeholder="Summary"><?php if($a_summary){echo $a_summary;} ?></textarea> * Recommended<br>
         <!-- <input type="text" name="a_sc" placeholder="SoundCloud Embed" <?php // if($a_sc){echo 'value="'.htmlspecialchars($a_sc).'"';} ?>> * Recommended <a onclick="alert('This is the code for embedding a SoundCloud audio. This is not the link to SoundCloud! Go to your SoundCloud audio > \'share\' > \'embed\' to find the code, and copy and paste it here.');" href="#">[?]</a><br> -->
         <input type="file" name="a_audio"> Upload a mp3<br>
-        <input type="file" name="a_img"> <!-- placeholder="Image Path" <?php // if($a_img){echo 'value="'.$a_img.'"';} ?>> --> Upload an image<br>
+        <input type="file" name="a_img"> Upload an image<br>
         <select name="a_div">
-            <option value="i">International</option>
-            <option value="u">U.S. and Politics</option>
-            <option value="b">Business</option>
-            <option value="c">Science and Conservation</option>
-            <option value="l">Local</option>
-            <option value="s">Sports</option>
+            <option value="i" <?php if($a_div&&$a_div=='i'){echo 'selected';} ?>>International</option>
+            <option value="u" <?php if($a_div&&$a_div=='u'){echo 'selected';} ?>>U.S. and Politics</option>
+            <option value="b" <?php if($a_div&&$a_div=='b'){echo 'selected';} ?>>Business</option>
+            <option value="c" <?php if($a_div&&$a_div=='c'){echo 'selected';} ?>>Science and Conservation</option>
+            <option value="l" <?php if($a_div&&$a_div=='l'){echo 'selected';} ?>>Local</option>
+            <option value="s" <?php if($a_div&&$a_div=='s'){echo 'selected';} ?>>Sports</option>
         </select>
         <input type="submit" value="Upload">
     </form>

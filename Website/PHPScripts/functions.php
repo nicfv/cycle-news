@@ -20,7 +20,7 @@ function printfooter() {
             echo '<p class="error">An error occurred. Could not subscribe. Please try again.</p>';
             }
         } else {
-            echo '<p class="error">Invalid email format</p>';
+            echo '<p class="error">Invalid email format.</p>';
         }
     }
     writefilecontents('/Scripts/footer.html');
