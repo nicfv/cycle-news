@@ -142,20 +142,20 @@ function getRecent($div, $limit, $layout) {
 }
 
 // Call this function to embed several recent videos. Parameters: Maximum Amount to Embed, Width [Px], Height [Px]
-function getVids($limit, $width, $height) {
+function getVids($limit, $width, $height, $heading = true) {
     global $dbname;
     $result = query('SELECT title, url FROM `'.$dbname.'`.`videos` ORDER BY id DESC LIMIT '.(int)$limit.';');
     echo '<article>';
-    echo '<h2>Videos</h2>';
+    if($heading) { echo '<h2>Videos</h2>'; }
     echo '<section class="videos">';
     while($row = mysqli_fetch_assoc($result)) {
-        echo '<section>';
-        echo '<h3><a href="https://www.youtube.com/watch?v='.$row['url'].'" target="_blank">'.$row['title'].'</a></h3>';
+        echo '<section'.($heading?' style="display:inline-block;"':'').'>';
+        echo '<h3><a href="https://www.youtube.com/watch?v='.$row['url'].'" target="_blank" title="'.$row['title'].'">'.(strlen($row['title'])>20?substr($row['title'], 0, 17).'...':$row['title']).'</a></h3>';
         echo '<iframe width="'.(int)$width.'" height="'.(int)$height.'" style="width:'.(int)$width.'px;height:'.(int)$height.'px;" src="https://www.youtube.com/embed/'.$row['url'].'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         echo '</section>';
     }
     echo '</section>';
-    echo '<p class="more"><a href="/Videos">More Videos</a></p>';
+    if($heading) { echo '<p class="more"><a href="/Videos">More Videos</a></p>'; }
     echo '</article>';
 
 }

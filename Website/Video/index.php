@@ -49,7 +49,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
 
     ?>
     <!-- HTML Page Starts Here -->
-    <form id="uploadform" action="/Upload/" method="POST" enctype="multipart/form-data">
+    <form id="uploadform" action="/Video/" method="POST" enctype="multipart/form-data">
         <h1>Upload a video here!</h1>
         <input type="text" name="v_title" placeholder="Title" <?php if($v_title){echo 'value="'.$v_title.'"';} ?>> * Required<br>
         <input type="text" name="v_url" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" <?php if($v_url){echo 'value="'.$v_url.'"';} ?>><a onclick="alert('Copy the link for a YouTube video and paste it here.');" href="#">[?]</a> * Required<br>

@@ -18,12 +18,19 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
     <section>
       <article id="Featured-Video">
         <h2>Featured Video</h2>
-        <div class="top-img"></div>
+        <div style="text-align:center;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lWdsHMmnXcg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </article>
     </section>
 
 <!-- Videos Section -->
-  <article id="videos-main">
+  <h2 class="video-title" id="animatedreports">Cycle News Hour Reports, Interviews, and More</h2>
+  <div style="width=100%">
+  <?php getVids(99, 400, 225, false); ?>
+  </div>
+
+  <!-- <article id="videos-main">
     <h2 class="video-title" id="bikepath">The Bike Path</h2>
     <section class="videos-flex">
       <section>
@@ -132,7 +139,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <h3>Winter Quarter 2019 Retreat</h3></a>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/zN6j_s5e8TE" allowfullscreen></iframe>
       </section>
-    </section>
+    </section> -->
 
     <!-- Videos, Social, Subscribe -->
     <section id="division-aside">
