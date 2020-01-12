@@ -97,9 +97,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/PHPScripts/functions.php';
         <input type="text" name="a_title" placeholder="Title" <?php if($a_title){echo 'value="'.$a_title.'"';} ?>> * Required<br>
         <input type="text" name="a_author" placeholder="Author" <?php if($a_author){echo 'value="'.$a_author.'"';} ?>><br>
         <input type="date" name="a_date" <?php if($a_date2){echo 'value="'.$a_date2.'"';} ?>><br>
-        <textarea name="a_summary" placeholder="Summary"><?php if($a_summary){echo $a_summary;} ?></textarea> * Recommended<br>
+        <textarea name="a_summary" placeholder="Summary"><?php if($a_summary){echo $a_summary;} ?></textarea> * Required<br>
         <!-- <input type="text" name="a_sc" placeholder="SoundCloud Embed" <?php // if($a_sc){echo 'value="'.htmlspecialchars($a_sc).'"';} ?>> * Recommended <a onclick="alert('This is the code for embedding a SoundCloud audio. This is not the link to SoundCloud! Go to your SoundCloud audio > \'share\' > \'embed\' to find the code, and copy and paste it here.');" href="#">[?]</a><br> -->
-        <input type="file" name="a_audio"> Upload mp3 or wav<br>
+        <input type="file" name="a_audio"> * Upload mp3 or wav<br>
         <input type="file" name="a_img"> Upload an image<br>
         <select name="a_div">
             <option value="i" <?php if($a_div&&$a_div=='i'){echo 'selected';} ?>>International</option>
